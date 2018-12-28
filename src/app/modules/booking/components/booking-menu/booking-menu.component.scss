@@ -1,0 +1,51 @@
+@import './../../../../../assets/scss/variables';
+
+:host ::ng-deep {
+  .multitab-header {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: $multitab-bg-color;
+    color: $white-color;
+    margin-right: 1em;
+    min-width: 157px;
+    padding: 0.393em 1em;
+  }
+
+  .multitab-header-rtl {
+    display: inline-block;
+    border-radius: 2px;
+    background-color: $multitab-bg-color;
+    color: $white-color;
+    //margin-right: 1em;
+    margin-left: 1em;
+    min-width: 157px;
+    padding: 0.393em 1em;
+    // float: right;
+  }
+  
+
+  .multitab-header-active, .multitab-header-rtl-active {
+    font-weight: 900;
+    padding-bottom: 0.643em;
+  }
+
+  .tab-content {
+    padding: 1.357em 1.786em 2.429em;
+  }
+}
+
+.showSearchHistoryWrapper{
+  //float: right;
+  .btn-search{
+		color: $white-color;
+		background:transparent;
+		border: none;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: map-get($container-max-widths, md)) {
+  .showSearchHistoryWrapper{
+    display:none;
+  }
+}

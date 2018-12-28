@@ -1,0 +1,13 @@
+@import "../../../../assets/scss/_variables.scss";
+.app-search-history-div{
+	.btn-search{
+		color: $white-color;
+		background:transparent;
+		border: none;
+		cursor: pointer;
+	}
+	.search-collapsible-div{
+		background:transparent;
+	}
+}
+

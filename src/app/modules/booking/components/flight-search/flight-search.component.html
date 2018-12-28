@@ -1,0 +1,257 @@
+<app-mobile-header [title]="mobileHeaderTitle" [rightIcon]="'icon-remove1'"></app-mobile-header>
+
+<div class="flight-search">
+	<form [formGroup]='flightSearchForm'>
+		<div class="row pb-md-5">
+
+			<div class="col-12 col-md-5 pb-md-0">
+				<app-tabs [preSelectTabHeaderIndex]="preSelectTabHeaderIndex" [tabHeaders]="tabHeaders" [tabHeadClass]="direction === 'rtl' ? 'booking-header-rtl' :  'booking-header'" (selectionChange)="tripTypeChanged($event)"></app-tabs>
+			</div>
+
+			<div class="col-12  col-md-5  pay-with-miles-wrapper pay-divs pb-md-0" *ngIf="!isMobile">
+				<div class="d-flex flex-row-reverse" *ngIf="!isLoggedIn && !redemption">
+					<p [ngClass]="direction === 'rtl' ? 'ml-rtl-4' :  'mr-ltr-5'" class="pay-miles-out px-5" (click)="onClickPayWithMilesLink()">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAY_WITH_MILES}}</p>
+				</div>
+				<div [ngClass]="direction === 'rtl' ? 'ml-rtl-5' :  'mr-ltr-5'" class="d-flex flex-row-reverse px-5" *ngIf="isLoggedIn && !redemption">
+					<label [ngClass]="direction === 'rtl' ? 'checkbox-container-rtl' :  'checkbox-container'" for="payWithMilesCheck">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAY_WITH_MILES}}
+						<input formControlName="payWithMilesInd" type="checkbox" id="payWithMilesCheck" name="payWithMilesCheck">
+						<span [ngClass]="direction === 'rtl' ? 'checkmark-rtl' :  'checkmark'"></span>
+					</label>
+				</div>
+			</div>
+			<div class="col-12  col-md-2 pay-divs promocode-div pb-md-0" *ngIf="!isMobile">
+				<div class="d-flex flex-row-reverse">
+					<app-promocode [translations]="translations" [promocodeBody]="promocodeBody" [formValidityFlag]="flightSearchForm.valid?true:false"></app-promocode>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- ONE-WAY & ROUNDTRIP FLIGHT START-->
+		<div class="flight-search-form-container" *ngIf="flightSearchForm.get('tripType').value !== 'M'">
+			<div class="row col-12 col-md-12	 flight-search-form mx-0 px-4 px-md-0 pb-2 pb-md-0">
+				<!-- ORIGIN START -->
+				<div [ngClass]="direction === 'rtl' ? 'pl-rtl-0' :  'pl-ltr-0'" class="non-multi-from-wrapper col-12 col-md pb-3 pb-md-0">
+					<app-autocomplete [dropdownLabel]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_FROM"
+					 [selectLabel]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SELECT_FROM" [leftIcon]="'icon-from'"
+					 [mobilePlaceHolder]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SEARCH_AIRPORT"
+					 [rightIcon]="'icon-arrow-down'" [source]="originSource" [translations]="translations"
+					 (notify)="originChanged($event, null)" [patch]="originPatch"
+					 formControlName="origin" [control]="flightSearchForm.controls['origin']" name="origin"
+					 [focusInput]="originInputFocus">
+					</app-autocomplete>
+					<div class="error-message" *ngIf="flightSearchForm.get('origin').invalid && flightSearchForm.get('origin').touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_ORIGIN_REQUIRED}}
+					</div>
+				</div>
+				<!-- ORIGIN END -->
+
+				<!-- DESTINATION -->
+				<div class="col-12 col-md non-multi-to-wrapper pb-3 pb-md-0">
+					<app-autocomplete [dropdownLabel]=translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_TO
+					[selectLabel]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SELECT_TO" [leftIcon]="'icon-to'"
+					[mobilePlaceHolder]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SEARCH_AIRPORT" [translations]="translations"
+					[rightIcon]="'icon-arrow-down'" [source]="destinationSource" [patch]="destinationPatch"
+					 formControlName="destination" [control]="flightSearchForm.controls['destination']" (notify)="destinationChanged($event, null)"
+					 name="destination"
+					[focusInput]="destinationInputFocus">
+					</app-autocomplete>
+					<div class="error-message" *ngIf="flightSearchForm.get('destination').invalid && flightSearchForm.get('destination').touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_DESTINATION_REQUIRED}}
+					</div>
+				</div>
+				<!-- DESTINATION END -->
+
+				<!-- DATEPICKER START -->
+				<div class="r-date-picker-wrapper col-12 col-md-3 pb-3 pb-md-0" *ngIf="flightSearchForm.get('tripType').value === 'R'" >
+					<app-datepicker [outsideDays]="'collapsed'" [isOneway]="false" [departureDateControl]="flightSearchForm.get('departureDate')"
+					 [returnDateControl]="flightSearchForm.get('returnDate')" [disabled]="flightSearchForm.get('origin').invalid || flightSearchForm.get('destination').invalid"
+					 [calendarPriceInput]="calendarPriceInput" (notify)="dateChanged($event)"  [translations]="translations"
+					 [fromDatePatch]="departureDatePatch" [toDatePatch]="returnDatePatch" [dateFocus]="dateInputFocus1" >
+					</app-datepicker>
+					<div class="error-message" *ngIf="flightSearchForm.get('departureDate').invalid && flightSearchForm.get('returnDate').invalid && flightSearchForm.get('returnDate').touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_DEPARTURE_RETURN_DATE_REQUIRED}}
+					</div>
+					<div class="error-message" *ngIf="flightSearchForm.get('departureDate').valid && flightSearchForm.get('returnDate').invalid && flightSearchForm.get('returnDate').touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_RETURN_DATE_REQUIRED}}
+					</div>
+				</div>
+
+				<div class="o-date-picker-wrapper col-12 col-md-3 pb-3 pb-md-0" *ngIf="flightSearchForm.get('tripType').value === 'O'">
+						<app-datepicker [outsideDays]="'collapsed'" [isOneway]="true" [departureDateControl]="flightSearchForm.get('departureDate')"
+						 [returnDateControl]="flightSearchForm.get('returnDate')" [disabled]="flightSearchForm.get('origin').invalid || flightSearchForm.get('destination').invalid"
+						 [calendarPriceInput]="calendarPriceInput" (notify)="dateChanged($event)"
+						 [translations]="translations" [fromDatePatch]="departureDatePatch" [toDatePatch]="null"
+						 [dateFocus]="dateInputFocus2">
+						</app-datepicker>
+						<div class="error-message" *ngIf="flightSearchForm.get('tripType').value === 'O' && flightSearchForm.get('departureDate').invalid && flightSearchForm.get('departureDate').touched">
+							{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_DEPARTURE_DATE_REQUIRED}}
+						</div>
+				</div>
+				<!-- DATEPICKER END -->
+
+				<!-- PASSENGER START -->
+				<div class="col-12 col-md pb-3 pb-md-0">
+					<app-traveler-dropdown [origin]="flightSearchForm.get('origin').value" [destination]="flightSearchForm.get('destination').value"
+					 formControlName="passengers" [control]="flightSearchForm.get('passengers')" (selectionChanged)="patchCabinType($event)"
+					 [translations]="translations" [cabinClassPatch]="cabinClassPatch" [passengersPatch]="passengersPatch" [paxInputFocus]="paxInputFocus" [isDateValid]="((flightSearchForm.get('departureDate').valid && flightSearchForm.get('returnDate').valid) && flightSearchForm.get('passengers').invalid ? true : false)">
+					</app-traveler-dropdown>
+					<div class="error-message" *ngIf="flightSearchForm.get('passengers').invalid && flightSearchForm.get('passengers').touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_DEPARTURE_PASSENGER_TYPE_REQUIRED}}
+					</div>
+				</div>
+				<!-- PASSENGER END -->
+
+				<!-- SEARCH BUTTON START -->
+				<div [ngClass]="direction === 'rtl' ? 'pl-rtl-0' :  'pr-ltr-0'" class="col-12 col-md pb-3 pb-md-0" *ngIf="!isMobile">
+					<button class="btn btn-block search-button" (click)="onSubmit()">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.SEARCH}}</button>
+				</div>
+				<!-- SEARCH BUTTON END -->
+			</div>
+		</div>
+		<!-- ONE-WAY & ROUNDTRIP FLIGHT END -->
+
+		<!-- MULTI-CITY START -->
+		<div class="flight-search-form-container" *ngIf="flightSearchForm.get('tripType').value === 'M'">
+			<!-- REPEATABLE ELEMENTS START -->
+			<div class="row col-12 col-md-12  pb-4 flight-search-form mx-0 px-4 px-md-0 pb-2 " *ngFor="let origin of flightSearchForm.get('origins').controls; let i = index"  >
+				<!-- ORIGINS START -->
+				<div [ngClass]="direction === 'rtl' ? 'pl-rtl-0' :  'pl-ltr-0'" class="non-multi-from-wrapper col-12 col-md pb-3 pb-md-0" formArrayName="origins">
+					<app-autocomplete [dropdownLabel]=translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_FROM
+					[selectLabel]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SELECT_FROM" [translations]="translations"
+					[mobilePlaceHolder]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SEARCH_AIRPORT"
+					[leftIcon]="'icon-from'" [rightIcon]="'icon-arrow-down'" [source]="originSource"
+					 (notify)="originChanged($event, i)" [formControlName]="i" [control]="flightSearchForm.get('origins').controls[i]" name="origin" [focusInput]="multiCityFocus[i].originInputFocus" >
+					</app-autocomplete>
+					<div class="error-message" *ngIf="flightSearchForm.get('origins').controls[i].invalid && flightSearchForm.get('origins').controls[i].touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_ORIGIN_REQUIRED}}
+					</div>
+				</div>
+				<!-- ORIGINS END -->
+
+				<!-- DESTINATIONS START -->
+				<div class="col-12 col-md non-multi-to-wrapper pb-3 pb-md-0" formArrayName="destinations">
+					<app-autocomplete [dropdownLabel]=translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_TO
+					 [selectLabel]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SELECT_TO" [translations]="translations"
+					 [mobilePlaceHolder]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SEARCH_AIRPORT"
+					 [leftIcon]="'icon-to'" [rightIcon]="'icon-arrow-down'" [source]="destinationSourceArr[i]"
+					 [formControlName]="i" [control]="flightSearchForm.get('destinations').controls[i]" (notify)="destinationChanged($event, i)"
+					 name="destination"
+					 [focusInput]="multiCityFocus[i].destinationInputFocus">
+					</app-autocomplete>
+					<div class="error-message" *ngIf="flightSearchForm.get('destinations').controls[i].invalid && flightSearchForm.get('destinations').controls[i].touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_DESTINATION_REQUIRED}}
+					</div>
+				</div>
+				<!-- DESTINATIONS END -->
+
+				<!-- DATEPICKERS START -->
+				<div class="m-date-picker-wrapper col-12 col-md-3 pb-3 pb-md-0" [formGroup]="flightSearchForm">
+					<app-datepicker [outsideDays]="'collapsed'" [isOneway]="true" [displayMonths]="1" [departureDateControl]="flightSearchForm.get('departureDates').controls[i]"
+					 [returnDateControl]="null" [startDate]="i > 0 ? flightSearchForm.get('departureDates').controls[(i-1)].value : null"
+					 [disabled]="flightSearchForm.get('origins').controls[i].invalid || flightSearchForm.get('destinations').controls[i].invalid"
+					 [translations]="translations" (notify)="updateSelectionForMulticity(i)"
+					 [dateFocus]="multiCityFocus[i].multiCityDate">
+					</app-datepicker>
+					<div class="error-message" *ngIf="flightSearchForm.get('departureDates').controls[i].invalid && flightSearchForm.get('departureDates').controls[i].touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_DEPARTURE_DATE_REQUIRED}}
+					</div>
+				</div>
+				<!-- DATEPICKERS END -->
+
+				<!-- PASSENGER START -->
+				<div class="col-12 col-md pb-3 pb-md-0" *ngIf="i === 0">
+					<app-traveler-dropdown [origin]="flightSearchForm.get('origins').controls[0].value" [destination]="flightSearchForm.get('destinations').controls[0].value"
+					 formControlName="passengers" [control]="flightSearchForm.get('passengers')" (selectionChanged)="patchCabinType($event)"
+					 [translations]="translations"
+					 [paxInputFocus]="multiCityFocus[0].paxInputFocus"
+					 [isDateValid]="(flightSearchForm.get('departureDates').controls[0].valid  ? true : false)">
+					</app-traveler-dropdown>
+					<div class="error-message" *ngIf="flightSearchForm.get('passengers').invalid && flightSearchForm.get('passengers').touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_DEPARTURE_PASSENGER_TYPE_REQUIRED}}
+					</div>
+				</div>
+				<div class="col-12 col-md pb-3 pb-md-0" *ngIf="i !== 0">
+				<button *ngIf="i >= minRows"
+						class="multiButtons col-md-6 px-0 text-left" (click)="removeRow(i)">
+						<i class="icon-remove mx-1 align-middle "></i>
+						<span class="align-middle">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.REMOVE}}</span></button>
+				</div>
+				<!-- PASSENGER END -->
+
+				<!-- REMOVE ROW START -->
+				<!-- <div class="col-12 col-md" *ngIf="i >= minRows">
+					<button class="btn btn-danger" (click)="removeRow(i)">Remove</button>
+				</div> -->
+				<!-- REMOVE ROW END -->
+
+				<!-- EXTRA COLUMN START -->
+				<!-- <div class="flex-item" *ngIf="i === (minRows - 1)"></div> -->
+				<div class="col-12 col-md pb-3 pb-md-0"></div>
+				<!-- EXTRA COLUMN END -->
+			</div>
+			<!-- REPEATABLE ELEMENTS END -->
+
+			<!-- ADD ROW AND SEARCH BUTTON START -->
+			<div class="row col-12 col-md-12  flight-search-form-controls mx-0 px-4 px-md-0">
+				<!-- ADD ROW START -->
+				<div class="col-12 col-md-10 pb-3 px-md-0">
+					<!-- <button class="multiButtons col-md-3 px-0 text-left"
+						[disabled]="currentRows === maxRows"
+					(click)="addRow()">
+					<i class="icon-plus-outline mx-1 align-middle"></i>
+					<span class="align-middle">Add a flight (up to 6)</span>
+					</button> -->
+				</div>
+				<!-- ADD ROW END -->
+
+				<!-- SEARCH BUTTON START -->
+				<div class="col-12 col-md" *ngIf="!isMobile">
+					<button class="btn btn-block search-button" (click)="onSubmit()">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.SEARCH}}</button>
+				</div>
+				<!-- SEARCH BUTTON END -->
+			</div>
+			<!-- ADD ROW AND SEARCH BUTTON END -->
+		</div>
+
+		<div *ngIf="showPaymentMethod" class="row col-12 col-md-12	 flight-search-form mx-0 px-4 px-md-0 pb-2 pb-md-0">
+			<div class="col-12 col-md px-md-0 pb-3 pb-md-0">
+					<app-payment-method [translations]="translations" [countryName]="paymentMethodOriginCountryNameCode" (selectedPaymentMethod)="onSelectedPaymentMethod($event)"[market]="market"></app-payment-method>
+					<div class="error-message mt-0" *ngIf="flightSearchForm.get('paymentMethod').invalid && flightSearchForm.get('paymentMethod').touched">
+						{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_PAYMENT_METHOD_REQUIRED}}
+					</div>
+			</div>
+		</div>
+
+		<div class="row  mx-0 px-0 px-md-0 pb-2 pb-md-0" *ngIf="isMobile">
+			<div class="col-12 d-inline-flex">
+				<div class="col-7 px-0 pay-with-miles-wrapper pay-divs">
+					<div *ngIf="!isLoggedIn  && !redemption">
+						<p class="pay-miles-out">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAY_WITH_MILES}}</p>
+					</div>
+					<div *ngIf="isLoggedIn   && !redemption">
+						<label [ngClass]="direction === 'rtl' ? 'checkbox-container-rtl' :  'checkbox-container'" for="payWithMilesCheck">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAY_WITH_MILES}}
+							<input formControlName="payWithMilesInd" type="checkbox" id="payWithMilesCheck" name="payWithMilesCheck">
+							<span [ngClass]="direction === 'rtl' ? 'checkmark-rtl' :  'checkmark'"></span>
+						</label>
+					</div>
+				</div>
+				<div class="col-5 px-0 text-center pay-divs promocode-div d-flex flex-row-reverse">
+					<app-promocode [translations]="translations" [promocodeBody]="promocodeBody" [formValidityFlag]="flightSearchForm.valid?true:false"></app-promocode>
+				</div>
+			</div>
+			<div class="col-12">
+				<button class="btn btn-block search-button" (click)="onSubmit()">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.SEARCH}}</button>
+			</div>
+		</div>
+
+		<!-- MULTI-CITY END -->
+	</form>
+</div>
+<div *ngIf="showSearchHistory">
+	<app-search-history [translations]="translations"
+				(hideEvent)="onHideSearchHistory()"
+				(searchHistorySelected)="patchSelectedSearchHistory($event, true)">
+	</app-search-history>
+</div>
+

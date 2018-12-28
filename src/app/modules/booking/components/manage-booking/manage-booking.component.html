@@ -1,0 +1,50 @@
+<app-mobile-header [title]="translations?.BOOKING_APP?.MANAGE_BOOKING?.TITLE" [rightIcon]="'icon-remove1'"></app-mobile-header>
+
+<div class="manage-booking-div">
+	<div class="row pb-md-5 ">
+		<div class="col-12">
+			<app-tabs ></app-tabs>
+		</div>
+	</div>
+	<div class="row mx-0 px-4 px-md-0 pb-2 pb-md-0">
+		<!-- <div *ngIf="errorMessage && bookingSearchForm.valid" class="text-danger text-center">
+			<p>
+				{{errorMessage}}
+			</p>
+		</div> -->
+		<form [formGroup]="bookingSearchForm" class="row col-12 col-md-12 input-container">
+			<div class=" col-12 col-md-5 last-name-wrapper pl-md-0 pb-3 pb-md-0">
+				<app-input-text [inputPlaceHolder]="translations?.BOOKING_APP?.MANAGE_BOOKING?.LAST_NAME"
+					[leftIcon]="'icon-user'"
+					formControlName="lastName"
+					[control]="bookingSearchForm.controls['lastName']"
+						(keypress)="alphaNumericOnly($event)">
+				</app-input-text>
+				<div class="error-message" *ngIf="bookingSearchForm.get('lastName').invalid && bookingSearchForm.get('lastName').touched">
+
+          {{ ( bookingSearchForm.controls['lastName'].errors?.required ?  translations?.BOOKING_APP?.MANAGE_BOOKING?.ERRORS?.ERROR_LASTNAME_REQUIRED  :  translations?.BOOKING_APP?.MANAGE_BOOKING?.ERRORS?.ERROR_LASTNAME_INVALID )  }}
+				</div>
+			</div>
+			<div class="col-12  col-md-5  booking-num-wrapper pb-3 pb-md-0">
+				<app-input-text
+					[inputPlaceHolder]="translations?.BOOKING_APP?.MANAGE_BOOKING?.BOOKING_NUMBER"
+					[leftIcon]="'icon-card'"
+					formControlName="bookingNumber"
+					[control]="bookingSearchForm.controls['bookingNumber']"
+          (keypress)="numericOnly($event)"
+          [upperCase]="true"
+          [size]="6">
+				</app-input-text>
+				<div class="error-message" *ngIf="bookingSearchForm.get('bookingNumber').invalid && bookingSearchForm.get('bookingNumber').touched">
+
+          {{ ( bookingSearchForm.controls['bookingNumber'].errors?.required ?  translations?.BOOKING_APP?.MANAGE_BOOKING?.ERRORS?.ERROR_BOOKING_NUMBER_REQUIRED  :  translations?.BOOKING_APP?.MANAGE_BOOKING?.ERRORS?.ERROR_BOOKING_NUMBER_INVALID )  }}
+				</div>
+			</div>
+			<div class="col-12 col-md-2 pr-0 mr-0 pr-md-0 pb-3 pb-md-0 text-center"  >
+				<button class="btn search-button col-12 " type="submit" (click)="onSubmit()">{{translations?.BOOKING_APP?.MANAGE_BOOKING?.SEARCH_BTN}}</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+

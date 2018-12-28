@@ -1,0 +1,57 @@
+{
+    "WebsitegetFlightInfoByFlightNumberResponse": {
+        "return": [
+            {
+                "destination": "",
+                "destinationAirport": "",
+                "destinationAirportCode": "CMN",
+                "flightDate": "21/10/2018",
+                "flightNumber": "AT971",
+                "origin": "",
+                "originAirport": "",
+                "originAirportCode": "MAD",
+                "realArrival": "21/10/2018 20:12",
+                "realDeparter": "21/10/2018 19:25",
+                "schedueldArrival": "21/10/2018 20:20",
+                "schedueldDeparter": "21/10/2018 19:30",
+                "statut": "ARRIVED",
+                "timezoneDestination": "Africa/",
+                "timezoneOrigine": "Europe/"
+            },
+            {
+                "destination": "",
+                "destinationAirport": "",
+                "destinationAirportCode": "CMN",
+                "flightDate": "22/10/2018",
+                "flightNumber": "AT971",
+                "origin": "",
+                "originAirport": "",
+                "originAirportCode": "MAD",
+                "realArrival": "22/10/2018 20:20",
+                "realDeparter": "22/10/2018 19:30",
+                "schedueldArrival": "22/10/2018 20:20",
+                "schedueldDeparter": "22/10/2018 19:30",
+                "statut": "ON TIME",
+                "timezoneDestination": "Africa/",
+                "timezoneOrigine": "Europe/"
+            },
+            {
+                "destination": "",
+                "destinationAirport": "",
+                "destinationAirportCode": "CMN",
+                "flightDate": "23/10/2018",
+                "flightNumber": "AT971",
+                "origin": "",
+                "originAirport": "",
+                "originAirportCode": "MAD",
+                "realArrival": "23/10/2018 20:20",
+                "realDeparter": "23/10/2018 19:30",
+                "schedueldArrival": "23/10/2018 20:20",
+                "schedueldDeparter": "23/10/2018 19:30",
+                "statut": "ON TIME",
+                "timezoneDestination": "Africa/",
+                "timezoneOrigine": "Europe/"
+            }
+        ]
+    }
+}

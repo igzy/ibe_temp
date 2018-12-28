@@ -1,0 +1,23 @@
+
+<app-tabs (selectionChange)="selectionChange($event)" [tabHeaders]="headers"  [tabHeadClass]="direction === 'rtl' ? 'multitab-header-rtl' : 'multitab-header'"
+  [tabBodyClass]="'multitab-body'" [tabHeaderListClass]="direction === 'ltr' ? 'col-12' : 'col-lg-7 col-xs-12'"[ngSwitch]="bookingChoice">
+  <div *ngSwitchCase="headers[0]">
+    <app-flight-search [redemption]="redemption" [translations]="translations"></app-flight-search>
+  </div>
+  <div *ngSwitchCase="headers[1]">
+    <app-check-in [translations]="translations"></app-check-in>
+  </div>
+  <div *ngSwitchCase="headers[2]">
+    <app-manage-booking [translations]="translations"></app-manage-booking>
+  </div>
+  <div *ngSwitchCase="headers[3]">
+	<app-flight-status [translations]="translations"></app-flight-status>
+  </div>
+</app-tabs>
+<div *ngIf="!hideSearchHistory" class="showSearchHistoryWrapper pt-2">
+  <button type="button" class="btn-search" (click)="onShowSearchHistory()">
+      {{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.SHOW_LAST_SEARCHES}}
+	</button>
+</div>
+
+

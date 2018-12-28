@@ -1,0 +1,79 @@
+@import './../../../../styles';
+
+.input-div {
+    border-bottom: 1px solid $white-color;
+    height: 35px;
+    font-size: 1.143em;
+    font-weight: 100;
+    input[type=text] {
+        border: none;
+        background-color: transparent;
+        color:  $white-color;
+        outline: none;
+		// width: 90%;
+		width: 100%;
+		// padding-left: 10px;
+	}
+	i {
+		color:$white-color;
+		// position: absolute;
+
+	}
+	.prefix-addon {
+		color:$white-color;
+		font-weight: 500;
+		padding-top: 1px;
+	}
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color:$white-color;
+    opacity: 0.7; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $white-color;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color:  $white-color;
+}
+
+.error-message{
+    width: 100%;
+    margin-top: .25rem;
+	font-size: 100%;
+	color: $white-color;
+  }
+
+@media (max-width: map-get($container-max-widths, md)) {
+	::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+		color:$black-color;
+	}
+
+	:-ms-input-placeholder { /* Internet Explorer 10-11 */
+		color: $black-color;
+	}
+
+	::-ms-input-placeholder { /* Microsoft Edge */
+		color:  $black-color;
+	}
+
+	.input-div{
+		border-bottom: 1px solid $black-color;
+		// margin: 20px 0px;
+		// padding: 0 30px;
+		input[type=text] {
+			color: $black;
+			width: 100%;
+		}
+		i{
+			color: $black-color;
+		}
+		.prefix-addon {
+			color:$black-color;
+			padding: 1px 5px 0 5px;
+		}
+	}
+
+}

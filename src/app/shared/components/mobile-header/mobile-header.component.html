@@ -1,0 +1,13 @@
+<div class="mobile-header">
+	<div class="row col-12 mx-0 pb-2">
+		<div [ngClass]="direction === 'rtl' ? 'text-left' :  'text-right'" class="col" *ngIf="header.leftIcon != null">
+			<i  [ngClass]="header.leftIcon"></i>
+		</div>
+		<div class="col-8 title text-nowrap" *ngIf="header.title != null " >
+			{{ header.title }}
+		</div>
+		<div [ngClass]="direction === 'rtl' ? 'text-left' :  'text-right'" class="col" *ngIf="header.rightIcon != null" (click)="hideTab()">
+			<i  [ngClass]="header.rightIcon"></i>
+		</div>
+	</div>
+</div>

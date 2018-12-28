@@ -1,0 +1,2582 @@
+{
+    "data": {
+        "trip": {
+            "outbound": {
+                "indirectBounds": {
+                    "bounds": [{
+                            "id": "20180313_TLV_ORY_01_CDG_JFK_02",
+                            "segments": [{
+                                    "id": "TLV_ORY_01_20180313",
+                                    "airline": {
+                                        "name": "ELY",
+                                        "label": "El Al"
+                                    },
+                                    "flightNumber": "TLV_ORY_01",
+                                    "departureDate": "2018-03-13T07:10:00.000Z",
+                                    "departureAirport": {
+                                        "name": "airport-tlv",
+                                        "code": "TLV",
+                                        "label": "Ben Gurion Intl",
+                                        "location": {
+                                            "cityName": "TLV",
+                                            "city": "Tel Aviv-Yafo",
+                                            "country": "Israel",
+                                            "countryName": "IL"
+                                        }
+                                    },
+                                    "departureAirportTerminal": {
+                                        "name": "T1",
+                                        "label": "1"
+                                    },
+                                    "arrivalDate": "2018-03-13T11:30:00.000Z",
+                                    "arrivalAirport": {
+                                        "name": "airport-ory",
+                                        "code": "ORY",
+                                        "label": "Orly",
+                                        "location": {
+                                            "cityName": "PAR",
+                                            "city": "Paris",
+                                            "country": "France",
+                                            "countryName": "FR"
+                                        }
+                                    },
+                                    "arrivalAirportTerminal": {
+                                        "name": "T2",
+                                        "label": "2"
+                                    },
+                                    "stops": [],
+                                    "cabins": [{
+                                        "type": "economy"
+                                    }],
+                                    "mealType": "dinner",
+                                    "aircraftType": "B739"
+                                },
+                                {
+                                    "id": "CDG_JFK_02_20180313",
+                                    "airline": {
+                                        "name": "ELY",
+                                        "label": "El Al"
+                                    },
+                                    "flightNumber": "CDG_JFK_02",
+                                    "departureDate": "2018-03-13T15:10:00.000Z",
+                                    "departureAirport": {
+                                        "name": "airport-cdg",
+                                        "code": "CDG",
+                                        "label": "Charles-de-Gaulle",
+                                        "location": {
+                                            "cityName": "PAR",
+                                            "city": "Paris",
+                                            "country": "France",
+                                            "countryName": "FR"
+                                        }
+                                    },
+                                    "departureAirportTerminal": {
+                                        "name": "T1",
+                                        "label": "1"
+                                    },
+                                    "arrivalDate": "2018-03-13T22:50:00.000Z",
+                                    "arrivalAirport": {
+                                        "name": "airport-jfk",
+                                        "code": "JFK",
+                                        "label": "John F Kennedy Intl",
+                                        "location": {
+                                            "cityName": "NYC",
+                                            "city": "New York",
+                                            "stateName": "NY",
+                                            "state": "New York",
+                                            "country": "USA",
+                                            "countryName": "US"
+                                        }
+                                    },
+                                    "arrivalAirportTerminal": {
+                                        "name": "T2",
+                                        "label": "2"
+                                    },
+                                    "stops": [],
+                                    "cabins": [{
+                                            "type": "economy"
+                                        },
+                                        {
+                                            "type": "premium"
+                                        },
+                                        {
+                                            "type": "business"
+                                        },
+                                        {
+                                            "type": "first"
+                                        }
+                                    ],
+                                    "mealType": "dinner",
+                                    "aircraftType": "B739"
+                                }
+                            ],
+                            "fares": [{
+                                    "name": "ECO-SPC",
+                                    "label": "Economy Special",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 695.0462,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-FLX",
+                                    "label": "Economy Flex",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 869.011,
+                                        "isDifference": false
+                                    },
+                                    "recommended": true,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-PLS",
+                                    "label": "Economy Plus",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 955.9934,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-XL",
+                                    "label": "Economy XL",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1042.9758,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-SPC",
+                                    "label": "Premium Basic",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 1303.923,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_ORY_01",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-FLX",
+                                    "label": "Premium Flex",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 1477.0748,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_ORY_01",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-PLS",
+                                    "label": "Premium Plus",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1564.0573,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_ORY_01",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "BUS-PLS",
+                                    "label": "Business Plus",
+                                    "bookingClassName": "business",
+                                    "cabinTypeName": "business",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 2172.9338,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 0,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_ORY_01",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "20180313_TLV_CDG_02_CDG_JFK_02",
+                            "segments": [{
+                                    "id": "TLV_CDG_02_20180313",
+                                    "airline": {
+                                        "name": "ELY",
+                                        "label": "El Al"
+                                    },
+                                    "flightNumber": "TLV_CDG_02",
+                                    "departureDate": "2018-03-13T12:15:00.000Z",
+                                    "departureAirport": {
+                                        "name": "airport-tlv",
+                                        "code": "TLV",
+                                        "label": "Ben Gurion Intl",
+                                        "location": {
+                                            "cityName": "TLV",
+                                            "city": "Tel Aviv-Yafo",
+                                            "country": "Israel",
+                                            "countryName": "IL"
+                                        }
+                                    },
+                                    "departureAirportTerminal": {
+                                        "name": "T1",
+                                        "label": "1"
+                                    },
+                                    "arrivalDate": "2018-03-13T17:30:00.000Z",
+                                    "arrivalAirport": {
+                                        "name": "airport-cdg",
+                                        "code": "CDG",
+                                        "label": "Charles-de-Gaulle",
+                                        "location": {
+                                            "cityName": "PAR",
+                                            "city": "Paris",
+                                            "country": "France",
+                                            "countryName": "FR"
+                                        }
+                                    },
+                                    "arrivalAirportTerminal": {
+                                        "name": "T2",
+                                        "label": "2"
+                                    },
+                                    "stops": [],
+                                    "cabins": [{
+                                            "type": "economy"
+                                        },
+                                        {
+                                            "type": "first"
+                                        }
+                                    ],
+                                    "mealType": "dinner",
+                                    "aircraftType": "B739"
+                                },
+                                {
+                                    "id": "CDG_JFK_02_20180313",
+                                    "airline": {
+                                        "name": "ELY",
+                                        "label": "El Al"
+                                    },
+                                    "flightNumber": "CDG_JFK_02",
+                                    "departureDate": "2018-03-13T15:10:00.000Z",
+                                    "departureAirport": {
+                                        "name": "airport-cdg",
+                                        "code": "CDG",
+                                        "label": "Charles-de-Gaulle",
+                                        "location": {
+                                            "cityName": "PAR",
+                                            "city": "Paris",
+                                            "country": "France",
+                                            "countryName": "FR"
+                                        }
+                                    },
+                                    "departureAirportTerminal": {
+                                        "name": "T1",
+                                        "label": "1"
+                                    },
+                                    "arrivalDate": "2018-03-13T22:50:00.000Z",
+                                    "arrivalAirport": {
+                                        "name": "airport-jfk",
+                                        "code": "JFK",
+                                        "label": "John F Kennedy Intl",
+                                        "location": {
+                                            "cityName": "NYC",
+                                            "city": "New York",
+                                            "stateName": "NY",
+                                            "state": "New York",
+                                            "country": "USA",
+                                            "countryName": "US"
+                                        }
+                                    },
+                                    "arrivalAirportTerminal": {
+                                        "name": "T2",
+                                        "label": "2"
+                                    },
+                                    "stops": [],
+                                    "cabins": [{
+                                            "type": "economy"
+                                        },
+                                        {
+                                            "type": "premium"
+                                        },
+                                        {
+                                            "type": "business"
+                                        },
+                                        {
+                                            "type": "first"
+                                        }
+                                    ],
+                                    "mealType": "dinner",
+                                    "aircraftType": "B739"
+                                }
+                            ],
+                            "fares": [{
+                                    "name": "ECO-SPC",
+                                    "label": "Economy Special",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 896.1533,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": true,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-FLX",
+                                    "label": "Economy Flex",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 1120.7589,
+                                        "isDifference": false
+                                    },
+                                    "recommended": true,
+                                    "bestValue": true,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-PLS",
+                                    "label": "Economy Plus",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1233.0616,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": true,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-XL",
+                                    "label": "Economy XL",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1345.3644,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": true,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-SPC",
+                                    "label": "Premium Basic",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 1681.1383,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_CDG_02",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-FLX",
+                                    "label": "Premium Flex",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 1905.7438,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_CDG_02",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-PLS",
+                                    "label": "Premium Plus",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 2016.9122,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_CDG_02",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "BUS-FLX",
+                                    "label": "Business Special",
+                                    "bookingClassName": "business",
+                                    "cabinTypeName": "business",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 2241.5178,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 6,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_CDG_02",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "BUS-PLS",
+                                    "label": "Business Plus",
+                                    "bookingClassName": "business",
+                                    "cabinTypeName": "business",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 2801.8972,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 6,
+                                    "mixedCabins": [{
+                                        "flightNumber": "TLV_CDG_02",
+                                        "cabinTypeName": "economy"
+                                    }],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "showMore": {
+                        "show": true,
+                        "enabled": true
+                    }
+                },
+                "directBounds": {
+                    "bounds": [{
+                            "id": "20180313_TLV_JFK_01",
+                            "segments": [{
+                                "id": "TLV_JFK_01_20180313",
+                                "airline": {
+                                    "name": "ELY",
+                                    "label": "El Al"
+                                },
+                                "flightNumber": "TLV_JFK_01",
+                                "departureDate": "2018-03-13T05:00:00.000Z",
+                                "departureAirport": {
+                                    "name": "airport-tlv",
+                                    "code": "TLV",
+                                    "label": "Ben Gurion Intl",
+                                    "location": {
+                                        "cityName": "TLV",
+                                        "city": "Tel Aviv-Yafo",
+                                        "country": "Israel",
+                                        "countryName": "IL"
+                                    }
+                                },
+                                "departureAirportTerminal": {
+                                    "name": "T1",
+                                    "label": "1"
+                                },
+                                "arrivalDate": "2018-03-13T17:00:00.000Z",
+                                "arrivalAirport": {
+                                    "name": "airport-jfk",
+                                    "code": "JFK",
+                                    "label": "John F Kennedy Intl",
+                                    "location": {
+                                        "cityName": "NYC",
+                                        "city": "New York",
+                                        "stateName": "NY",
+                                        "state": "New York",
+                                        "country": "USA",
+                                        "countryName": "US"
+                                    }
+                                },
+                                "arrivalAirportTerminal": {
+                                    "name": "T2",
+                                    "label": "2"
+                                },
+                                "stops": [],
+                                "cabins": [{
+                                        "type": "economy"
+                                    },
+                                    {
+                                        "type": "premium"
+                                    },
+                                    {
+                                        "type": "business"
+                                    },
+                                    {
+                                        "type": "first"
+                                    }
+                                ],
+                                "mealType": "dinner",
+                                "aircraftType": "B739"
+                            }],
+                            "fares": [{
+                                    "name": "ECO-SPC",
+                                    "label": "Economy Special",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 633.28485,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-FLX",
+                                    "label": "Economy Flex",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 791.81036,
+                                        "isDifference": false
+                                    },
+                                    "recommended": true,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-PLS",
+                                    "label": "Economy Plus",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 871.0731,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-XL",
+                                    "label": "Economy XL",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 950.3359,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-SPC",
+                                    "label": "Premium Basic",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 1188.1241,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-FLX",
+                                    "label": "Premium Flex",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 1345.8325,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-PLS",
+                                    "label": "Premium Plus",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1425.0952,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "BUS-PLS",
+                                    "label": "Business Plus",
+                                    "bookingClassName": "business",
+                                    "cabinTypeName": "business",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1979.9344,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 0,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "20180313_TLV_JFK_04",
+                            "segments": [{
+                                "id": "TLV_JFK_04_20180313",
+                                "airline": {
+                                    "name": "ELY",
+                                    "label": "El Al"
+                                },
+                                "flightNumber": "TLV_JFK_04",
+                                "departureDate": "2018-03-13T06:00:00.000Z",
+                                "departureAirport": {
+                                    "name": "airport-tlv",
+                                    "code": "TLV",
+                                    "label": "Ben Gurion Intl",
+                                    "location": {
+                                        "cityName": "TLV",
+                                        "city": "Tel Aviv-Yafo",
+                                        "country": "Israel",
+                                        "countryName": "IL"
+                                    }
+                                },
+                                "departureAirportTerminal": {
+                                    "name": "T1",
+                                    "label": "1"
+                                },
+                                "arrivalDate": "2018-03-13T17:00:00.000Z",
+                                "arrivalAirport": {
+                                    "name": "airport-jfk",
+                                    "code": "JFK",
+                                    "label": "John F Kennedy Intl",
+                                    "location": {
+                                        "cityName": "NYC",
+                                        "city": "New York",
+                                        "stateName": "NY",
+                                        "state": "New York",
+                                        "country": "USA",
+                                        "countryName": "US"
+                                    }
+                                },
+                                "arrivalAirportTerminal": {
+                                    "name": "T2",
+                                    "label": "2"
+                                },
+                                "stops": [{
+                                    "date": "2018-03-13T09:10:00.000Z",
+                                    "duration": 1800,
+                                    "airport": {
+                                        "name": "airport-nce",
+                                        "code": "NCE",
+                                        "label": "Cote d\"Azur",
+                                        "location": {
+                                            "cityName": "NCE",
+                                            "city": "Nice",
+                                            "country": "France",
+                                            "countryName": "FR"
+                                        }
+                                    }
+                                }],
+                                "cabins": [{
+                                        "type": "economy"
+                                    },
+                                    {
+                                        "type": "premium"
+                                    },
+                                    {
+                                        "type": "first"
+                                    }
+                                ],
+                                "mealType": "dinner",
+                                "aircraftType": "B739"
+                            }],
+                            "fares": [{
+                                    "name": "ECO-SPC",
+                                    "label": "Economy Special",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 636.0615,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-FLX",
+                                    "label": "Economy Flex",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 795.2769,
+                                        "isDifference": false
+                                    },
+                                    "recommended": true,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-PLS",
+                                    "label": "Economy Plus",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 874.4846,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-XL",
+                                    "label": "Economy XL",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 954.4923,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-SPC",
+                                    "label": "Premium Basic",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 1192.9154,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-FLX",
+                                    "label": "Premium Flex",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 1352.1307,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-PLS",
+                                    "label": "Premium Plus",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1431.3385,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 4,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "showMore": {
+                        "show": true,
+                        "enabled": true
+                    }
+                },
+                "sortBy": "price"
+            },
+            "returnBound": {
+                "indirectBounds": {
+                    "bounds": [{
+                        "id": "20180416_JFK_CDG_01_CDG_TLV_01",
+                        "segments": [{
+                                "id": "JFK_CDG_01_20180416",
+                                "airline": {
+                                    "name": "ELY",
+                                    "label": "El Al"
+                                },
+                                "flightNumber": "JFK_CDG_01",
+                                "departureDate": "2018-04-16T05:15:00.000Z",
+                                "departureAirport": {
+                                    "name": "airport-jfk",
+                                    "code": "JFK",
+                                    "label": "John F Kennedy Intl",
+                                    "location": {
+                                        "cityName": "NYC",
+                                        "city": "New York",
+                                        "stateName": "NY",
+                                        "state": "New York",
+                                        "country": "USA",
+                                        "countryName": "US"
+                                    }
+                                },
+                                "departureAirportTerminal": {
+                                    "name": "T1",
+                                    "label": "1"
+                                },
+                                "arrivalDate": "2018-04-16T13:30:00.000Z",
+                                "arrivalAirport": {
+                                    "name": "airport-cdg",
+                                    "code": "CDG",
+                                    "label": "Charles-de-Gaulle",
+                                    "location": {
+                                        "cityName": "PAR",
+                                        "city": "Paris",
+                                        "country": "France",
+                                        "countryName": "FR"
+                                    }
+                                },
+                                "arrivalAirportTerminal": {
+                                    "name": "T2",
+                                    "label": "2"
+                                },
+                                "stops": [],
+                                "cabins": [{
+                                        "type": "economy"
+                                    },
+                                    {
+                                        "type": "premium"
+                                    },
+                                    {
+                                        "type": "business"
+                                    },
+                                    {
+                                        "type": "first"
+                                    }
+                                ],
+                                "mealType": "dinner",
+                                "aircraftType": "B739"
+                            },
+                            {
+                                "id": "CDG_TLV_01_20180416",
+                                "airline": {
+                                    "name": "AF",
+                                    "label": "Air france"
+                                },
+                                "flightNumber": "CDG_TLV_01",
+                                "departureDate": "2018-04-16T14:10:00.000Z",
+                                "departureAirport": {
+                                    "name": "airport-cdg",
+                                    "code": "CDG",
+                                    "label": "Charles-de-Gaulle",
+                                    "location": {
+                                        "cityName": "PAR",
+                                        "city": "Paris",
+                                        "country": "France",
+                                        "countryName": "FR"
+                                    }
+                                },
+                                "departureAirportTerminal": {
+                                    "name": "T1",
+                                    "label": "1"
+                                },
+                                "arrivalDate": "2018-04-16T18:30:00.000Z",
+                                "arrivalAirport": {
+                                    "name": "airport-tlv",
+                                    "code": "TLV",
+                                    "label": "Ben Gurion Intl",
+                                    "location": {
+                                        "cityName": "TLV",
+                                        "city": "Tel Aviv-Yafo",
+                                        "country": "Israel",
+                                        "countryName": "IL"
+                                    }
+                                },
+                                "arrivalAirportTerminal": {
+                                    "name": "T2",
+                                    "label": "2"
+                                },
+                                "stops": [],
+                                "cabins": [{
+                                    "type": "economy"
+                                }],
+                                "mealType": "dinner",
+                                "aircraftType": "B739"
+                            }
+                        ],
+                        "fares": [{
+                                "name": "ECO-SPC",
+                                "label": "Economy Special",
+                                "bookingClassName": "economy",
+                                "cabinTypeName": "economy",
+                                "familyName": "basic",
+                                "netPrice": {
+                                    "cashAmount": 1116.6289,
+                                    "isDifference": false
+                                },
+                                "recommended": false,
+                                "bestValue": false,
+                                "nbSeatLeft": null,
+                                "mixedCabins": [],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "ECO-FLX",
+                                "label": "Economy Flex",
+                                "bookingClassName": "economy",
+                                "cabinTypeName": "economy",
+                                "familyName": "flex",
+                                "netPrice": {
+                                    "cashAmount": 1395.7861,
+                                    "isDifference": false
+                                },
+                                "recommended": true,
+                                "bestValue": false,
+                                "nbSeatLeft": null,
+                                "mixedCabins": [],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "ECO-PLS",
+                                "label": "Economy Plus",
+                                "bookingClassName": "economy",
+                                "cabinTypeName": "economy",
+                                "familyName": "smart",
+                                "netPrice": {
+                                    "cashAmount": 1535.9121,
+                                    "isDifference": false
+                                },
+                                "recommended": false,
+                                "bestValue": false,
+                                "nbSeatLeft": null,
+                                "mixedCabins": [],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "ECO-XL",
+                                "label": "Economy XL",
+                                "bookingClassName": "economy",
+                                "cabinTypeName": "economy",
+                                "familyName": "smart",
+                                "netPrice": {
+                                    "cashAmount": 1674.9434,
+                                    "isDifference": false
+                                },
+                                "recommended": false,
+                                "bestValue": false,
+                                "nbSeatLeft": null,
+                                "mixedCabins": [],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "PRE-SPC",
+                                "label": "Premium Basic",
+                                "bookingClassName": "premium",
+                                "cabinTypeName": "premium",
+                                "familyName": "basic",
+                                "netPrice": {
+                                    "cashAmount": 2094.2266,
+                                    "isDifference": false
+                                },
+                                "recommended": false,
+                                "bestValue": false,
+                                "nbSeatLeft": null,
+                                "mixedCabins": [{
+                                    "flightNumber": "CDG_TLV_01",
+                                    "cabinTypeName": "economy"
+                                }],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "PRE-FLX",
+                                "label": "Premium Flex",
+                                "bookingClassName": "premium",
+                                "cabinTypeName": "premium",
+                                "familyName": "flex",
+                                "netPrice": {
+                                    "cashAmount": 2373.3838,
+                                    "isDifference": false
+                                },
+                                "recommended": false,
+                                "bestValue": false,
+                                "nbSeatLeft": null,
+                                "mixedCabins": [{
+                                    "flightNumber": "CDG_TLV_01",
+                                    "cabinTypeName": "economy"
+                                }],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "PRE-PLS",
+                                "label": "Premium Plus",
+                                "bookingClassName": "premium",
+                                "cabinTypeName": "premium",
+                                "familyName": "smart",
+                                "netPrice": {
+                                    "cashAmount": 2512.415,
+                                    "isDifference": false
+                                },
+                                "recommended": false,
+                                "bestValue": false,
+                                "nbSeatLeft": null,
+                                "mixedCabins": [{
+                                    "flightNumber": "CDG_TLV_01",
+                                    "cabinTypeName": "economy"
+                                }],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "BUS-FLX",
+                                "label": "Business Special",
+                                "bookingClassName": "business",
+                                "cabinTypeName": "business",
+                                "familyName": "flex",
+                                "netPrice": {
+                                    "cashAmount": 2791.5723,
+                                    "isDifference": false
+                                },
+                                "recommended": false,
+                                "bestValue": false,
+                                "nbSeatLeft": 5,
+                                "mixedCabins": [{
+                                    "flightNumber": "CDG_TLV_01",
+                                    "cabinTypeName": "economy"
+                                }],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            },
+                            {
+                                "name": "BUS-PLS",
+                                "label": "Business Plus",
+                                "bookingClassName": "business",
+                                "cabinTypeName": "business",
+                                "familyName": "smart",
+                                "netPrice": {
+                                    "cashAmount": 3490.0127,
+                                    "isDifference": false
+                                },
+                                "recommended": false,
+                                "bestValue": false,
+                                "nbSeatLeft": 5,
+                                "mixedCabins": [{
+                                    "flightNumber": "CDG_TLV_01",
+                                    "cabinTypeName": "economy"
+                                }],
+                                "details": {
+                                    "seatSelection": true,
+                                    "ticketChangeFee": {
+                                        "cashAmount": 20,
+                                        "pointAmount": 40
+                                    },
+                                    "matmidBenefits": [
+                                        "2 x 8 kg hand luggage",
+                                        "60 Check-in",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Lorem ipsum",
+                                        "Earn 250 points"
+                                    ],
+                                    "refund": 50,
+                                    "extra": [
+                                        "1 x 23 kg checked baggage",
+                                        "1 x 8 kg hand luggage",
+                                        "Include Meal"
+                                    ]
+                                }
+                            }
+                        ]
+                    }],
+                    "showMore": {
+                        "show": false,
+                        "enabled": true
+                    }
+                },
+                "directBounds": {
+                    "bounds": [{
+                            "id": "20180416_JFK_TLV_03",
+                            "segments": [{
+                                "id": "JFK_TLV_03_20180416",
+                                "airline": {
+                                    "name": "ELY",
+                                    "label": "El Al"
+                                },
+                                "flightNumber": "JFK_TLV_03",
+                                "departureDate": "2018-04-16T13:05:00.000Z",
+                                "departureAirport": {
+                                    "name": "airport-jfk",
+                                    "code": "JFK",
+                                    "label": "John F Kennedy Intl",
+                                    "location": {
+                                        "cityName": "NYC",
+                                        "city": "New York",
+                                        "stateName": "NY",
+                                        "state": "New York",
+                                        "country": "USA",
+                                        "countryName": "US"
+                                    }
+                                },
+                                "departureAirportTerminal": {
+                                    "name": "T1",
+                                    "label": "1"
+                                },
+                                "arrivalDate": "2018-04-16T20:15:00.000Z",
+                                "arrivalAirport": {
+                                    "name": "airport-tlv",
+                                    "code": "TLV",
+                                    "label": "Ben Gurion Intl",
+                                    "location": {
+                                        "cityName": "TLV",
+                                        "city": "Tel Aviv-Yafo",
+                                        "country": "Israel",
+                                        "countryName": "IL"
+                                    }
+                                },
+                                "arrivalAirportTerminal": {
+                                    "name": "T2",
+                                    "label": "2"
+                                },
+                                "stops": [],
+                                "cabins": [{
+                                        "type": "economy"
+                                    },
+                                    {
+                                        "type": "premium"
+                                    },
+                                    {
+                                        "type": "business"
+                                    },
+                                    {
+                                        "type": "first"
+                                    }
+                                ],
+                                "mealType": "dinner",
+                                "aircraftType": "B739"
+                            }],
+                            "fares": [{
+                                    "name": "ECO-SPC",
+                                    "label": "Economy Special",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 672.64777,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-FLX",
+                                    "label": "Economy Flex",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 840.80975,
+                                        "isDifference": false
+                                    },
+                                    "recommended": true,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-PLS",
+                                    "label": "Economy Plus",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 925.3356,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "ECO-XL",
+                                    "label": "Economy XL",
+                                    "bookingClassName": "economy",
+                                    "cabinTypeName": "economy",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1008.9717,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-SPC",
+                                    "label": "Premium Basic",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "basic",
+                                    "netPrice": {
+                                        "cashAmount": 1261.6595,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 5,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-FLX",
+                                    "label": "Premium Flex",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 1429.8214,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 5,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "PRE-PLS",
+                                    "label": "Premium Plus",
+                                    "bookingClassName": "premium",
+                                    "cabinTypeName": "premium",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 1513.4575,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 5,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "BUS-PLS",
+                                    "label": "Business Plus",
+                                    "bookingClassName": "business",
+                                    "cabinTypeName": "business",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 2102.4692,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": 1,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "id": "20180416_JFK_TLV_01",
+                            "segments": [{
+                                "id": "JFK_TLV_01_20180416",
+                                "airline": {
+                                    "name": "ELY",
+                                    "label": "El Al"
+                                },
+                                "flightNumber": "JFK_TLV_01",
+                                "departureDate": "2018-04-16T04:00:00.000Z",
+                                "departureAirport": {
+                                    "name": "airport-jfk",
+                                    "code": "JFK",
+                                    "label": "John F Kennedy Intl",
+                                    "location": {
+                                        "cityName": "NYC",
+                                        "city": "New York",
+                                        "stateName": "NY",
+                                        "state": "New York",
+                                        "country": "USA",
+                                        "countryName": "US"
+                                    }
+                                },
+                                "departureAirportTerminal": {
+                                    "name": "T1",
+                                    "label": "1"
+                                },
+                                "arrivalDate": "2018-04-16T16:00:00.000Z",
+                                "arrivalAirport": {
+                                    "name": "airport-tlv",
+                                    "code": "TLV",
+                                    "label": "Ben Gurion Intl",
+                                    "location": {
+                                        "cityName": "TLV",
+                                        "city": "Tel Aviv-Yafo",
+                                        "country": "Israel",
+                                        "countryName": "IL"
+                                    }
+                                },
+                                "arrivalAirportTerminal": {
+                                    "name": "T2",
+                                    "label": "2"
+                                },
+                                "stops": [],
+                                "cabins": [{
+                                        "type": "business"
+                                    },
+                                    {
+                                        "type": "first"
+                                    }
+                                ],
+                                "mealType": "dinner",
+                                "aircraftType": "B739"
+                            }],
+                            "fares": [{
+                                    "name": "BUS-FLX",
+                                    "label": "Business Special",
+                                    "bookingClassName": "business",
+                                    "cabinTypeName": "business",
+                                    "familyName": "flex",
+                                    "netPrice": {
+                                        "cashAmount": 2179.5073,
+                                        "isDifference": false
+                                    },
+                                    "recommended": false,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "BUS-PLS",
+                                    "label": "Business Plus",
+                                    "bookingClassName": "business",
+                                    "cabinTypeName": "business",
+                                    "familyName": "smart",
+                                    "netPrice": {
+                                        "cashAmount": 2724.3843,
+                                        "isDifference": false
+                                    },
+                                    "recommended": true,
+                                    "bestValue": false,
+                                    "nbSeatLeft": null,
+                                    "mixedCabins": [],
+                                    "details": {
+                                        "seatSelection": true,
+                                        "ticketChangeFee": {
+                                            "cashAmount": 20,
+                                            "pointAmount": 40
+                                        },
+                                        "matmidBenefits": [
+                                            "2 x 8 kg hand luggage",
+                                            "60 Check-in",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Lorem ipsum",
+                                            "Earn 250 points"
+                                        ],
+                                        "refund": 50,
+                                        "extra": [
+                                            "1 x 23 kg checked baggage",
+                                            "1 x 8 kg hand luggage",
+                                            "Include Meal"
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "showMore": {
+                        "show": true,
+                        "enabled": true
+                    }
+                },
+                "priceItems": [{
+                        "date": "2018-04-11T22:00:00.000Z",
+                        "price": {
+                            "cashAmount": 664.9263,
+                            "pointAmount": 1330
+                        },
+                        "isDeal": false,
+                        "pictureUrl": "",
+                        "description": ""
+                    },
+                    {
+                        "date": "2018-04-12T22:00:00.000Z",
+                        "price": {
+                            "cashAmount": 632.3536,
+                            "pointAmount": 1265
+                        },
+                        "isDeal": false,
+                        "pictureUrl": "",
+                        "description": ""
+                    },
+                    {
+                        "date": "2018-04-13T22:00:00.000Z",
+                        "price": {
+                            "cashAmount": 693.5042,
+                            "pointAmount": 1387
+                        },
+                        "isDeal": false,
+                        "pictureUrl": "",
+                        "description": ""
+                    },
+                    {
+                        "date": "2018-04-14T22:00:00.000Z",
+                        "price": {
+                            "cashAmount": 809.15234,
+                            "pointAmount": 1618
+                        },
+                        "isDeal": false,
+                        "pictureUrl": "",
+                        "description": ""
+                    },
+                    {
+                        "date": "2018-04-15T22:00:00.000Z",
+                        "price": {
+                            "cashAmount": 754.1415,
+                            "pointAmount": 1508
+                        },
+                        "isDeal": false,
+                        "pictureUrl": "",
+                        "description": ""
+                    },
+                    {
+                        "date": "2018-04-16T22:00:00.000Z",
+                        "price": {
+                            "cashAmount": 1082.0917,
+                            "pointAmount": 2164
+                        },
+                        "isDeal": false,
+                        "pictureUrl": "",
+                        "description": ""
+                    },
+                    {
+                        "date": "2018-04-17T22:00:00.000Z",
+                        "price": {
+                            "cashAmount": 758.6591,
+                            "pointAmount": 1517
+                        },
+                        "isDeal": false,
+                        "pictureUrl": "",
+                        "description": ""
+                    },
+                    {
+                        "date": "2018-04-18T22:00:00.000Z",
+                        "price": {
+                            "cashAmount": 628.4653,
+                            "pointAmount": 1257
+                        },
+                        "isDeal": false,
+                        "pictureUrl": "",
+                        "description": ""
+                    }
+                ],
+                "sortBy": "price"
+            }
+        }
+    }
+}

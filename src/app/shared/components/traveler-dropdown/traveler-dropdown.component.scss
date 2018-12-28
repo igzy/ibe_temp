@@ -1,0 +1,107 @@
+@import './../../../../styles';
+
+.confirmButton{
+	margin-top: 0.714em;
+	color: $white-color;
+	background: $red-color;
+}
+
+.ddw-icon-div{
+	//display:inline-flex;
+	position: absolute;
+	top: 0px;
+	color: $black-color;
+	background-color: $white-color;
+	height: 36px;
+	width: 92%;
+    i{
+        color:$black-color;
+        padding-top: 10px;
+        &.drop-down{
+			top: 0px;
+        }
+    }
+    .traveler-label{
+		padding-top: 10px;
+		font-size: 1.143em;
+		line-height: 16px;
+    }
+}
+
+.dropdown-wrapper {
+	position: absolute;
+	top: 36px;
+    z-index: 9999;
+    max-width: 280px;
+    background-color: $white-color!important;
+    padding: 0 30px;
+	margin-bottom: 20px;
+	box-shadow: 1px 1px 1px 1px $dark-gray-color;
+
+	  select {
+		background: transparent;
+		border: none;
+		border-bottom: 1px solid $black-color;
+
+		option {
+			text-transform: capitalize;
+		}
+
+
+	}
+
+	.traveler-dropdown-wrapper{
+		margin: 10px 0;
+	}
+
+	.mobile-header{
+		color:$red-color;
+		visibility: hidden;
+		height: 0;
+	}
+
+}
+
+.selectedDisplayWrapper{
+    cursor: pointer;
+}
+
+@media (max-width: map-get($container-max-widths, md)) {
+	.dropdown-wrapper{
+		max-width: unset;
+		padding: 0;
+		position: fixed;
+		left: 0;
+		right: 0;
+		top: 0;
+		background: white;
+		height: 100%;
+		width: 100%;
+
+		.mobile-header{
+			visibility: visible;
+			height: auto;
+			p{
+				color: $black-color;
+				font-size: 1.286em;
+			}
+		}
+
+		select{
+			border-bottom: 1px solid $red-color;
+			border-top: 1px solid $red-color;
+			padding: 0 10%;
+		}
+		.traveler-dropdown-wrapper{
+			padding: 0 15%;
+		}
+
+	}
+
+	// app-mobile-header /deep/{
+	// 	.mobile-header {
+	// 		display: flex;
+	// 		margin-bottom: 10px;
+	// 	}
+	// }
+}

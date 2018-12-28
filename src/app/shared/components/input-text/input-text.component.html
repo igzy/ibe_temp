@@ -1,0 +1,26 @@
+<div class="input-div pl-0 pr-0">
+  <div class="container-fluid pl-0 pr-0">
+      <div class="row ">
+        <div class=" col-12  col-md-12 text-light d-inline-flex">
+          <i class="col-1 col-md align-self-center px-1  " [ngClass]="leftIcon" *ngIf="leftIcon"></i>
+          <span class="prefix-addon">{{prefixDisplay}}</span>
+          <input
+                  type="text"
+                  placeholder={{inputPlaceHolder}}
+                  [(ngModel)]="inputText"
+                  [ngClass]="{'is-invalid': control?.invalid && control?.touched, 'text-uppercase' : control?.value && upperCase}"
+                  (blur)="onTouched()"
+				          (ngModelChange)="onChange()"
+                  class="col-11"
+                  maxlength="{{size}}"
+                  >
+        </div>
+      </div>
+    </div>
+</div>
+<!-- <div class="error-message" *ngIf="control?.errors?.required && control.touched">
+    Please enter {{inputPlaceHolder | lowercase}}.
+</div>
+<div class="error-message" *ngIf="control?.errors?.maxlength && control.touched">
+    Please enter {{inputPlaceHolder | lowercase}} in valid format.
+</div> -->

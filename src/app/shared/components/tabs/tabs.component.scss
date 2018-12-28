@@ -1,0 +1,160 @@
+@import './../../../../assets/scss/variables';
+
+.tab-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      cursor: pointer;
+      text-align: center;
+    }
+}
+
+.flight-class {
+    display: inline-block;
+    height: 32px;
+    font-size: 20px;
+    color:#332F2C;
+    text-align: center;
+    margin: 0px 46px 0px 0px;
+}
+
+.flight-class:nth-child(3) {
+    margin: 0px 23px 0px 0px;
+}
+
+.flight-class:first-child {
+    margin: 0px 46px 0px 23px;
+}
+
+.flight-color {
+    border-bottom: 2px solid $red-color;
+    font-weight: bold;
+}
+
+
+.multitab-body {
+    border-radius: 2px;
+    background-color: $multitab-bg-color;
+    // width: 1232px;
+    // height: 148px;
+}
+
+
+/* Below class are for grayed out (dull) reusable tab utilization*/
+
+.dull-header-ul{
+    background-color: $dark-gray-color;
+    //padding-left: 27px;
+    height: 38px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.dull-header {
+    display: inline-block;
+    color:  $white-color;
+    font-size: 12px;/* Approximation due to font substitution */
+    line-height: 12px;/* Approximation due to font substitution */
+    text-align: center;
+    height: 13px;
+    margin-right: 48px;
+    padding-top: 20px;
+}
+
+.dull-header-active {
+    border-bottom: 2px solid $red-color;
+    padding-bottom: 15px;
+}
+
+.dull-body{
+    padding-top: 35px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background-color: $dark-gray-color;
+}
+
+.outbound-tab {
+    display: inline-block;
+    color:  $white-color;
+    font-size: 12px;/* Approximation due to font substitution */
+    line-height: 12px;/* Approximation due to font substitution */
+    text-align: center;
+    height: 13px;
+    margin-right: 20px;
+}
+
+.outbound-tab-active {
+    border-bottom: 2px solid $red-color;
+    padding-bottom: 20px;
+}
+
+.outbound-tab:first-child {
+    width: 123px;
+}
+
+.outbound-tab:nth-child(2) {
+    width: 88px;
+}
+
+.features-tab {
+    display: inline-block;
+    color:  $black-color;
+    font-size: 18px;/* Approximation due to font substitution */
+    line-height: 12px;/* Approximation due to font substitution */
+    text-align: center;
+    height: 13px;
+    margin-right: 20px;
+    font-weight: 300;
+    margin: 0 25px 0 25px;
+
+}
+
+.features-tab-active {
+    border-bottom: 2px solid $red-color;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.tab-container{
+	min-height: 23px;
+}
+
+// responsive
+@media (max-width: map-get($container-max-widths, md)) {
+
+
+	.tab-header ul {
+		li {
+		    width: 100%;
+    		padding: 20px 0px;
+    		margin: 5px 0px;
+		}
+
+		li.booking-header, li.booking-header-rtl{
+			padding: 5px 0px;
+			margin-top: 10px;
+			color: $black-color;
+			&.booking-header-active{
+				border:none;
+				span {
+					border-bottom: 2px solid $red-color;
+				}
+			}
+
+		}
+	}
+
+	.multitab-body{
+		background:$white-color;
+		color: $black-color;
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: auto;
+	}
+}
+
+

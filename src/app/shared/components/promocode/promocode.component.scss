@@ -1,0 +1,58 @@
+@import './../../../../styles';
+.no-promo-wrapper{
+    color: $white-color;
+    font-size: 1.143em;
+    cursor: pointer;
+}
+
+.valid-promo-wrapper{
+    color: $white-color;
+    background-color: $red-color;
+    font-size: 1.143em;
+    display:flex;
+    i {
+        cursor: pointer;
+    }
+}
+
+.disable-promo{
+    color: $white-color;
+    font-size: 1.143em;
+    cursor: no-drop; 
+    //pointer-events: none;
+}
+
+.text-danger small
+{
+    font-size: 110%;
+    color: $white-color;
+}
+
+.normal-label{
+    display: block;
+}
+
+.mobile-label{
+ display: none;
+}
+
+@media (max-width: map-get($container-max-widths, md)) {
+    .no-promo-wrapper{
+        font-size: 0.929em;
+    }
+    
+    .valid-promo-wrapper{
+        font-size: 0.929em;
+    }
+    
+    .disable-promo{
+        font-size: 0.929em;
+    }
+    .normal-label{
+        display: none;
+    }
+    
+    .mobile-label{
+     display: block;
+    }
+}

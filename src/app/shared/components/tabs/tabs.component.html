@@ -1,0 +1,14 @@
+<div class="tab-container"> 
+	<div *ngIf="tabHeaders" class="tab-header mb-md-0" [ngClass]="{'mb-3': isMobile && tabHeadClass == 'booking-header' }" >
+		<ul [ngClass]="{'d-inline-flex ': isMobile && tabBodyClass != 'multitab-body'}" class="{{ tabHeaderListClass }} col-12"  >
+			<li *ngFor="let tabHeader of tabHeaders" [ngClass]="[tabHeadClass, active === tabHeader ? tabHeadClass + '-active': '']"
+			 (click)="changeActive(tabHeader)">
+				<span>{{ tabHeader }}</span>
+			</li>
+		</ul>
+	</div>
+		<!-- <div [ngClass]="tabBodyClass" class="tab-content"> -->
+		<div [ngClass]="{'mobile d-block': isMobile && showTab && tabBodyClass == 'multitab-body', ' mobile d-none ' : isMobile && !showTab && tabBodyClass == 'multitab-body'}" class="tab-content {{tabBodyClass}}">
+			<ng-content></ng-content>
+		</div>
+	</div>

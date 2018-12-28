@@ -1,0 +1,123 @@
+{
+	"BOOKING_APP": {
+		"HEADERS" : ["BOOK A FLIGHT", "CHECK-IN", "MANAGE BOOKING", "FLIGHT STATUS"],
+		"BOOK_A_FLIGHT": {
+			"TITLE": "BOOK A FLIGHT",
+			"TRIP_TYPES" : ["Round Trip", "One way", "Multi-city"],
+			"FLY_SELECT": "Select",
+			"FLY_SELECT_FROM": "Select",
+			"FLY_SELECT_TO": "Select",
+			"FLY_ALL": "All",
+			"FLY_FROM": "From",
+			"FLY_TO": "To",
+			"FLY_SEARCH_AIRPORT": "Search airports",
+			"DATES": "Dates",
+			"CHOOSE_YOUR_DATE": "Choose your",
+			"DEPARTURE_DATE": "Departure Date",
+			"RETURN_DATE": "Return Date",
+			"MOBILE_CHOOSE_DATE": "Choose date",
+			"MOBILE_DEPARTURE_DATE": "Departure",
+			"MOBILE_RETURN_DATE": "Arrival",
+			"PAX_CABIN_CLASS": "Pax/cabin class",
+			"PAX_CABIN_CLASS_SELECT": "Select a class",
+			"CABIN_ECONOMIC_CLASS" : "Economic",
+			"CABIN_BUSINESS_CLASS" : "Business",
+			"PAX_TYPE": {
+				"ADT": { "label": "Adults", "subLabel": "+12 years" },
+				"CHD": { "label": "Children", "subLabel": "From 2 to 12 years" },
+				"INF": { "label": "Babies", "subLabel": "Under 2 years" },
+				"NEW": { "label": "New", "subLabel": "New adquisition" },
+				"YTH": { "label": "Youth", "subLabel": "Conditions" },
+				"STU": { "label": "Student", "subLabel": "Conditions" },
+				"YCD": { "label": "¿YCD?", "subLabel": "Conditions" }
+			},
+			"PAY_WITH_MILES": "Buy a ticket with my miles",
+			"PAYMENT_METHOD_TITLE": "Payment method",
+			"PAYMENT_MOROCCAN_CREDIT_CARD": "Moroccan credit cards",
+			"PAYMENT_INTERNATIONAL_CREDIT_CARD": "International credit cards",
+			"PAYMENT_CASH": "Cash payments",
+			"PROMO_CODE": "I have a promocode",
+			"MOBILE_PROMO_CODE": "Promo code",
+			"SEARCH": "Search",
+			"REMOVE": "Remove",
+			"CONFIRM": "Confirm",
+			"SHOW_LAST_SEARCHES": "Show your last searches",
+			"HIDE_LAST_SEARCHES": "Hide your last searches",
+			"ERRORS": {
+				"ERROR_ORIGIN_REQUIRED":"Please select origin.",
+				"ERROR_DESTINATION_REQUIRED": "Please select destination.",
+				"ERROR_DEPARTURE_RETURN_DATE_REQUIRED": "Please select departure and return date.",
+				"ERROR_RETURN_DATE_REQUIRED": "Please select return date.",
+				"ERROR_DEPARTURE_DATE_REQUIRED": "Please select departure date.",
+				"ERROR_DEPARTURE_PASSENGER_TYPE_REQUIRED": "Please add passenger types.",
+				"ERROR_DEPARTURE_PROMOCODE_INVALID": "Invalid Promocode.",
+				"ERROR_PAYMENT_METHOD_REQUIRED": "Please select payment method."
+			}
+		},
+		"CHECK_IN" : {
+			"TITLE" : "CHECK-IN",
+			"TAB_HEADERS" : ["Booking Number", "Ticket Number"],
+			"LAST_NAME": "Last name",
+			"BOOKING_NUMBER": "Booking number",
+			"TICKET_NUMBER": "Ticket number",
+			"CHECK_IN_BTN": "Check In",
+			"ERRORS": {
+				"ERROR_LASTNAME_REQUIRED":"Please enter last name.",
+				"ERROR_BOOKING_NUMBER_REQUIRED":"Please enter booking number.",
+        "ERROR_TICKET_NUMBER_REQUIRED":"Please enter ticket number.",
+        "ERROR_BOOKING_NUMBER_INVALID":"Invalid format.",
+        "ERROR_LASTNAME_INVALID":"Invalid format."
+			}
+		},
+		"MANAGE_BOOKING" : {
+			"TITLE" : "MANAGE BOOKING",
+			"LAST_NAME": "Last name",
+			"BOOKING_NUMBER": "Booking number",
+			"SEARCH_BTN": "Search",
+			"ERRORS": {
+				"ERROR_LASTNAME_REQUIRED":"Please enter last name.",
+        "ERROR_BOOKING_NUMBER_REQUIRED":"Please enter booking number.",
+        "ERROR_BOOKING_NUMBER_INVALID":"Invalid format.",
+        "ERROR_LASTNAME_INVALID":"Invalid format."
+			}
+		},
+		"FLIGHT_STATUS" : {
+			"TITLE" : "FLIGHT STATUS",
+			"TAB_HEADERS" : ["Route", "Flight Number"],
+			"DEPARTURE": "Departure",
+			"ARRIVAL": "Arrival",
+			"FLIGHT_NUMBER_PLACE_HOLDER": "XXXX (Flight Number)",
+			"FLIGHT_NUMBER": "Flight Number",
+			"CHECK_STATUS_BTN": "Check Status",
+			"ERRORS": {
+				"ERROR_DEPARTURE_REQUIRED":"Please select departure.",
+				"ERROR_ARRIVAL_REQUIRED": "Please select arrival.",
+				"ERROR_FLIGHT_NUM_REQUIRED": "Please enter flight number",
+				"ERROR_FLIGHT_NUM_INVALID": "Invalid format.",
+				"ERROR_NO_FLIGHT_ON_DATE": "No flight available on this date."
+			},
+			"DAYS": {
+				"YESTERDAY": "Yesterday",
+				"TODAY": "Today",
+				"TOMORROW": "Tomorrow"
+
+			},
+			"STATUS": "Status",
+			"STATUT": {
+				"ARRIVED": "Arrived",
+				"ON_TIME": "On Time",
+				"DELAYED": "Delayed",
+				"CANCELLED": "Cancelled",
+				"IN_PROGRESS": "In Progress"
+			},
+			"ALL": "All"
+		},
+		"DAYS" : ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+		"MONTHS" : ["January","February","March","April","May","June","July","August","September","October","November","December"],
+		"MONTHS_ABBREVIATED" : ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"],
+		"GENERIC_MESSAGES": {
+			"NO_RECORDS_FOUND": "No records found.",
+			"API_ERROR": "No records found."
+		}
+	}
+}

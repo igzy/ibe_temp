@@ -1,0 +1,89 @@
+@import "../../../../../assets/scss/variables.scss";
+
+  
+    .desktop-hide{
+      display: none;
+    }
+  
+    .secondary-header{
+        background-color: $lighter-gray;
+        height: 7.357em;
+        // width: 88.571em;
+  
+    }
+  
+    .secondary-arrow-div{
+        font-size: 3.25em;
+        color: $red;
+        margin: 10px 22px 0 22px;
+    }
+  
+    .red-font{
+        color: $red;
+  
+    }
+  
+    .date{
+        font-size: 3.142em;
+        letter-spacing: -0.028em;
+        margin: 0 0.4em 0 0;
+    }
+  
+  
+    .mid-div {
+      position: relative;
+      background: $lightest-gray;
+    }
+  
+    .mid-div:after, .mid-div:before {
+      top: 100%;
+      left: 50%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+  
+    .mid-div:after {
+      border-top-color: $lightest-gray;
+      border-width: 10px;
+      margin-left: -10px;
+    }
+    .mid-div:before {
+      border-top-color: $lightest-gray;
+      border-width: 16px;
+      margin-left: -16px;
+    }
+  
+    .day{
+        font-size: 1.357em;
+        font-weight: 100;
+        letter-spacing: -0.014em;
+    }
+  
+    .month{
+        font-size: 1.357em;
+        font-weight: 300;
+        letter-spacing: -0.014em;
+    }
+  
+    .date-details{
+        padding-top: 1.5em;
+        text-align: center;
+    }
+
+    // responsive
+    @media (max-width: 480px) {
+
+    .responsive-hide{
+        display: none;
+      }
+
+      .desktop-hide{
+        display: initial;
+      }
+    }
+  
+  

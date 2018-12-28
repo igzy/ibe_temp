@@ -1,0 +1,36 @@
+<app-dropdown [dropdownLabel]="(isMobile && control?.valid ? ' ' : translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAX_CABIN_CLASS )" [disableClick]="disableDropdown" [leftIcon]="'icon-passenger'" [rightIcon]="'icon-arrow-down'" (dropdownClicked)="onFocus(0)" [customFocus]="paxInputFocus">
+</app-dropdown>
+<div class="ddw-icon-div col-md-12 px-2 d-inline-flex" *ngIf="isDropdownVisible && !isMobile">
+	<i id="inputIconLeft" class="col-1 icon-passenger px-0" [ngClass]="leftIcon"></i>
+	<span class="traveler-label col-10"  [ngClass]="{'d-none': isMobile, 'd-block': !isMobile}">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAX_CABIN_CLASS}}</span>
+	<i class="col-1 drop-down icon-arrow-up px-0" [ngClass]="rightIcon"></i>
+</div>
+<div id="paxCabinWrapper" class="dropdown-wrapper container-fluid pt-4 pb-4 bg-light" *ngIf="isDropdownVisible">
+	<app-mobile-header [leftIcon]="'icon-user'" [title]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAX_CABIN_CLASS" [rightIcon]="'icon-remove1'" (closeEvent)="onFocus(1)" ></app-mobile-header>
+	<div class="row mb-4">
+		<div id="cabinSelectorWrapper" #selectClass class="col-lg-12 col-12 col-sm-12 col-md-12">
+			<select id="cabinSelector" class="form-control" [(ngModel)]="flightClassValue" placeholder="Select a class">
+				<option value="Select a class" disabled >{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAX_CABIN_CLASS_SELECT}}</option>
+				<option value="E">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.CABIN_ECONOMIC_CLASS}}</option>
+				<option value="B">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.CABIN_BUSINESS_CLASS}}</option>
+				<!-- <option value="F">First class</option> -->
+			</select>
+		</div>
+	</div>
+	<div class="traveler-dropdown-wrapper" *ngFor="let type of paxTypes; let i=index">
+		<div class="row">
+			<div class="col-lg-12 col-12 col-sm-12 col-md-12 mb-0">
+				<app-value-counter [label]="counterData[type]['label']" [subLabel]="counterData[type]['subLabel']" [value]="paxNumbers[i]"
+				 (increment)="incrementCount(i)" (decrement)="decrementCount(i)"></app-value-counter>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div id="paxCabinButtonWrapper" class=" col-5  col-sm-5 mx-auto col-md-12 col-lg-12">
+			<button class="btn btn-block confirmButton" (click)="confirmSelection()">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.CONFIRM}}</button>
+		</div>
+	</div>
+</div>
+<div class="selectedDisplayWrapper" (click)="onFocus(0)" *ngIf="control?.valid">
+	<app-display-selected [selectedObject]="{'chosenClass': chosenClass, 'getTotalPassengers': totalPassengerCount}" [displayFor]="'traveler'"></app-display-selected>
+</div>

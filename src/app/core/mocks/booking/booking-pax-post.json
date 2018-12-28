@@ -1,0 +1,112 @@
+{
+    "data": {
+        "passengers": [
+            {
+                "name": "1",
+                "fields": {
+                    "civility": {
+                        "required": true
+                    },
+                    "firstname": {
+                        "required": true
+                    },
+                    "lastname": {
+                        "required": true
+                    },
+                    "gender": {
+                        "required": true
+                    },
+                    "email": {
+                        "required": true
+                    },
+                    "phone": {
+                        "required": true
+                    },
+                    "birthday": {
+                        "required": true
+                    },
+                    "specialAssistance": null
+                },
+                "values": {
+                    "type": "ADT",
+                    "firstName": "",
+                    "middleName": ""
+                },
+                "valid": true
+            },
+            {
+                "name": "2",
+                "fields": {
+                    "civility": {
+                        "required": true
+                    },
+                    "firstname": {
+                        "required": true
+                    },
+                    "lastname": {
+                        "required": true
+                    },
+                    "gender": {
+                        "required": true
+                    },
+                    "email": {
+                        "required": true
+                    },
+                    "phone": {
+                        "required": true
+                    },
+                    "birthday": {
+                        "required": true
+                    },
+                    "specialAssistance": null
+                },
+                "values": {
+                    "type": "ADT",
+                    "firstName": "",
+                    "middleName": ""
+                },
+                "valid": true
+            },
+            {
+                "name": "3",
+                "fields": {
+                    "civility": {
+                        "required": true
+                    },
+                    "firstname": {
+                        "required": true
+                    },
+                    "lastname": {
+                        "required": true
+                    },
+                    "gender": {
+                        "required": true
+                    },
+                    "email": {
+                        "required": true
+                    },
+                    "phone": {
+                        "required": true
+                    },
+                    "birthday": {
+                        "required": true
+                    },
+                    "specialAssistance": null
+                },
+                "values": {
+                    "type": "CHD",
+                    "firstName": "",
+                    "middleName": ""
+                },
+                "valid": true
+            }
+        ],
+        "currentState": {
+            "passengerIndex": 0
+        },
+        "features": {
+            "genderSelection": false
+        },
+        "legalLinks": "mockLegalLinksData"
+    }
+}

@@ -1,0 +1,25 @@
+ <div class="input-wrapper row px-0 mx-0" id="radio-button" *ngIf="choices">
+    <div class="label-container">
+        <label for="">{{label}}</label>
+    </div>
+    <!-- <div class="choices-wrapper col-12 col-md-12 px-md-0 mx-md-0" >
+      <ul class="col-9 offset-3 col-md-12 offset-md-0 px-md-0 mx-md-0"> -->
+      <div  class="mb-0" [ngClass]="direction === 'rtl' ? 'choices-wrapper-rtl' :  'choices-wrapper'" >
+        <ul class="px-0 mx-0 mb-0"> 
+                <li [ngClass]="direction === 'rtl' ? 'choice-item-wrapper-rtl' : 'choice-item-wrapper' " *ngFor="let choiceData of choices; let i = index">
+                  <p  class="mb-0">
+                  <input type="radio" 
+                    id="{{choiceData.description}}" 
+                    name="rbChoice"
+                    value="{{choiceData.value}}"
+                    [(ngModel)]="selectedChoice" 
+                    (ngModelChange)="onChange($event)">
+                  <label for="{{choiceData.description}}">{{choiceData.description}}</label>
+                </p>
+              </li>
+        </ul>
+    </div>
+ </div>
+
+
+

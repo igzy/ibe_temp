@@ -1,0 +1,40 @@
+@import './../../../../styles';
+
+.input-div {
+    border-bottom: 1px solid $white-color;
+    height: 37px;
+    font-size: 16px;
+	font-weight: 100;
+	color: $white-color;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.rightIcon{
+    text-align: right;
+}
+
+.dropdown-label, .dropdown-label-rtl{
+	font-weight: 300;
+}
+
+@media (max-width: map-get($container-max-widths, md)) {
+
+	.input-div{
+		border-bottom: 1px solid $black-color;
+		color: $black-color;
+		i,span{
+			color: $black-color;
+		}
+
+		.dropdown-label{
+			padding:0 0 0 0.571em;
+		}
+
+		.dropdown-label-rtl{
+			padding:0 0.571em 0 0;
+		}
+	}
+}

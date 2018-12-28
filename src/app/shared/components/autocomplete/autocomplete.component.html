@@ -1,0 +1,61 @@
+
+<!-- <div class="input-div pl-0 pr-0">
+	<div class="container-fluid pl-0 pr-0">
+		<div class="row mx-0">
+			<div class="col-md-12 col-12 text-light d-inline-flex px-0">
+				<i id="buttonIconLeft"class="col-1 col-md align-self-center px-0" [ngClass]="leftIcon" *ngIf="leftIcon"></i>
+				<button id="buttonId"
+					(click)="onButtonClick($event)"
+					class="btn btn-field btn-block col-md-10 px-md-1 "
+					[disabled]="source == ''"
+					[ngStyle]="{'cursor' : source == '' ? 'no-drop': 'pointer'}">
+					<span id="buttonLabel" [ngClass]="{'visible': control?.invalid  && isMobile , 'invisible':  control?.valid && isMobile }">{{dropdownLabel}}</span>
+				</button>
+				<i id="buttonIconRight" class="col-1 col-md align-self-center text-right px-0" [ngClass]="rightIcon" *ngIf="rightIcon"></i>
+			</div>
+		</div>
+	</div>
+</div> -->
+<app-dropdown [dropdownLabel]="(isMobile && control?.valid ? ' ' : dropdownLabel)" [disableClick]="source == ''" [leftIcon]="leftIcon" [rightIcon]="rightIcon" (dropdownClicked)="onButtonClick($event)" [customFocus]="focusInput">
+</app-dropdown>
+<div class="auto-complete-div col-md-12 px-2 d-inline-flex" *ngIf="isDropdownVisible && !isMobile">
+	<i id="inputIconLeft" class="col-1 plane px-0" [ngClass]="leftIcon"></i>
+	<input id="inputFieldId" type="text" class="col-10 form-control" #origin (blur)="onBlur($event)" (keyup)="onKeyup($event.target.value)" (focus)="onTouched($event)"
+	 [disabled]="source == ''" placeholder="{{dropdownLabel}}">
+	<i class="drop-down icon-arrow-up col-1 px-0" [ngClass]="rightIcon"></i>
+</div>
+
+
+<div id="ddwWrapper" class="dropdown-wrapper inbound-outbound p-4" *ngIf="isDropdownVisible" (mousedown)="onDivClick()" (mouseup)="onMouseUP()">
+	<div id="ddwTitle" class="dropdown-title pb-2">{{selectLabel}} {{dropdownLabel | lowercase}}</div>
+	<app-letters-bar [translations]="translations" [availableOption]="availableLetters" (emitSelected)="onFilterSelected($event)"></app-letters-bar>
+	<div class="mobile-view" *ngIf="isMobile">
+		<app-mobile-header [leftIcon]="leftIcon" [title]="dropdownLabel" [rightIcon]="'icon-remove1'" (closeEvent)="closeDropDown()"></app-mobile-header>
+		<div class="search-row row ">
+			<div class="col-2 px-0 text-center align-middle">
+				<i class="icon-search" ></i>
+			</div>
+			<div class="col-10 px-0">
+				<input id="mobileInputFieldId" type="text" class="form-control"
+					#origin
+					(keyup)="onKeyup($event.target.value)"
+					[disabled]="source == ''"
+					placeholder="{{mobilePlaceHolder}}">
+			</div>
+		</div>
+	</div>
+	<ul class="location-wrapper">
+		<div id="ddwLocationColWrapper" class="column-wrapper">
+			<li class="clearfix  p-0" (mousedown)="selectSource(s)" *ngFor="let s of source.origins | filterSource:filterText:letterFilter | sort:'location':'city'">
+				<div class="location-city">
+					<p>{{ s.location.city | uppercase}} ({{ s.code | uppercase}})
+						<span>- {{ s.location.country }}</span>
+					</p>
+				</div>
+			</li>
+		</div>
+	</ul>
+</div>
+<div class="selectedDisplayWrapper" *ngIf="control?.valid" (click)="onClickDisplaySelected($event)">
+	<app-display-selected [selectedObject]="selectedCity" [displayFor]="'city'"></app-display-selected>
+</div>

@@ -1,0 +1,40 @@
+@import './../../../../../styles';
+@import '../flight-search/flight-search.component';
+
+.flight-status{
+
+	app-autocomplete /deep/{
+		.auto-complete-div /deep/ {
+			i {
+				margin-top: 0.429em;
+			}
+			.btn-block /deep/{
+				padding-left: 1.786em;
+			}
+		}
+
+	}
+}
+
+
+@media (max-width: map-get($container-max-widths, md)) {
+
+	.input-container{
+		// padding: 0 60px;
+		color:$black-color;
+
+		.checkin-header{
+			padding: 0px;
+		}
+
+	}
+
+	button.search-button {
+		color: $white-color;
+		background-color: $red-color;
+		width: 100%!important;
+		margin:0 auto;
+	}
+
+
+}

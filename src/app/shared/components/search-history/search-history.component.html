@@ -1,0 +1,16 @@
+<div class="app-search-history-div">
+	<p>
+		<!-- <button type="button" class="btn-search" (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" -->
+		<button type="button" class="btn-search" [attr.aria-expanded]="!isCollapsed"
+		 aria-controls="collapseExample" (click)="onClick()">
+		 	{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.HIDE_LAST_SEARCHES}}
+		</button>
+	</p>
+	<div id="collapseExample" class="search-collapsible-div" [ngbCollapse]="!isCollapsed">
+		<div class="search-result col-12 d-flex flex-wrap">
+			<div class="col-lg-6 col-12 " *ngFor="let search of searchList; let i = index">
+				<app-history-card [translations]="translations" (click)="onHistorySelected(search)" [searchObject]="search"></app-history-card>
+			</div>
+		</div>
+	</div>
+</div>

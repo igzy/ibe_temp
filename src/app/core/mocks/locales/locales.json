@@ -1,0 +1,888 @@
+{
+	"status": null,
+	"errors": null,
+	"data": [{
+		"creationTime": 1519210912637,
+		"lastModTime": 1524149292897,
+		"version": 2,
+		"code": "de",
+		"icon": "de",
+		"forFront": true,
+		"forAdmin": false,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1519210912730,
+			"lastModTime": 1524149292900,
+			"version": 2,
+			"code": "de",
+			"code_trans": "de",
+			"language_trans": "Deutsche"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1524149292900,
+			"version": 2,
+			"code": "de",
+			"code_trans": "en",
+			"language_trans": "German"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1524149292900,
+			"version": 2,
+			"code": "de",
+			"code_trans": "es",
+			"language_trans": "Alemán"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1524149292903,
+			"version": 2,
+			"code": "de",
+			"code_trans": "fr",
+			"language_trans": "Allemand"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1524149292900,
+			"version": 2,
+			"code": "de",
+			"code_trans": "he",
+			"language_trans": "אנגלית"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1524149292900,
+			"version": 2,
+			"code": "de",
+			"code_trans": "it",
+			"language_trans": "Tedesco"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1524149292900,
+			"version": 2,
+			"code": "de",
+			"code_trans": "ru",
+			"language_trans": "немецкий"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1524149292903,
+			"version": 2,
+			"code": "de",
+			"code_trans": "zh",
+			"language_trans": "德国"
+		}]
+	},
+	{
+		"creationTime": 1519210912637,
+		"lastModTime": null,
+		"version": 0,
+		"code": "en",
+		"icon": "gb",
+		"forFront": true,
+		"forAdmin": true,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "en",
+			"code_trans": "de",
+			"language_trans": "Englisch"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "en",
+			"code_trans": "en",
+			"language_trans": "English"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "en",
+			"code_trans": "es",
+			"language_trans": "Inglés"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "en",
+			"code_trans": "fr",
+			"language_trans": "Anglais"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "en",
+			"code_trans": "he",
+			"language_trans": "אנגלית"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "en",
+			"code_trans": "it",
+			"language_trans": "Inglese"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "en",
+			"code_trans": "ru",
+			"language_trans": "английский"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "en",
+			"code_trans": "zh",
+			"language_trans": "英语"
+		}]
+	},
+	{
+		"creationTime": 1519210912637,
+		"lastModTime": 1520437604447,
+		"version": 1,
+		"code": "es",
+		"icon": "es",
+		"forFront": true,
+		"forAdmin": true,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1519210912730,
+			"lastModTime": 1520437604447,
+			"version": 1,
+			"code": "es",
+			"code_trans": "de",
+			"language_trans": "Spanische"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1520437604447,
+			"version": 1,
+			"code": "es",
+			"code_trans": "en",
+			"language_trans": "Spanish"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1520437604447,
+			"version": 1,
+			"code": "es",
+			"code_trans": "es",
+			"language_trans": "Español"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1520437604447,
+			"version": 1,
+			"code": "es",
+			"code_trans": "fr",
+			"language_trans": "Spagnol"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1520437604447,
+			"version": 1,
+			"code": "es",
+			"code_trans": "he",
+			"language_trans": "אנגלית"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1520437604447,
+			"version": 1,
+			"code": "es",
+			"code_trans": "it",
+			"language_trans": "Spagnolo"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1520437604447,
+			"version": 1,
+			"code": "es",
+			"code_trans": "ru",
+			"language_trans": "испанский"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": 1520437604447,
+			"version": 1,
+			"code": "es",
+			"code_trans": "zh",
+			"language_trans": "西班牙语"
+		}]
+	},
+	{
+		"creationTime": 1519210912637,
+		"lastModTime": null,
+		"version": 0,
+		"code": "fr",
+		"icon": "fr",
+		"forFront": true,
+		"forAdmin": false,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "fr",
+			"code_trans": "de",
+			"language_trans": "Französisch"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "fr",
+			"code_trans": "en",
+			"language_trans": "French"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "fr",
+			"code_trans": "es",
+			"language_trans": "Francés"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "fr",
+			"code_trans": "fr",
+			"language_trans": "Français"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "fr",
+			"code_trans": "he",
+			"language_trans": "צרפתית"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "fr",
+			"code_trans": "it",
+			"language_trans": "Francese"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "fr",
+			"code_trans": "ru",
+			"language_trans": "французский"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "fr",
+			"code_trans": "zh",
+			"language_trans": "法国"
+		}]
+	},
+	{
+		"creationTime": 1519210912637,
+		"lastModTime": null,
+		"version": 0,
+		"code": "he",
+		"icon": "il",
+		"forFront": true,
+		"forAdmin": true,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "he",
+			"code_trans": "de",
+			"language_trans": "Hebräisch"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "he",
+			"code_trans": "en",
+			"language_trans": "Hebrew"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "he",
+			"code_trans": "es",
+			"language_trans": "Hebreo"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "he",
+			"code_trans": "fr",
+			"language_trans": "Hébreu"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "he",
+			"code_trans": "he",
+			"language_trans": "עברית"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "he",
+			"code_trans": "it",
+			"language_trans": "Ebraico"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "he",
+			"code_trans": "ru",
+			"language_trans": "иврит"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "he",
+			"code_trans": "zh",
+			"language_trans": "希伯来语"
+		}]
+	},
+	{
+		"creationTime": 1519210912637,
+		"lastModTime": null,
+		"version": 0,
+		"code": "it",
+		"icon": "it",
+		"forFront": true,
+		"forAdmin": false,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "it",
+			"code_trans": "de",
+			"language_trans": "Italienisch"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "it",
+			"code_trans": "en",
+			"language_trans": "Italian"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "it",
+			"code_trans": "es",
+			"language_trans": "Italiano"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "it",
+			"code_trans": "fr",
+			"language_trans": "Italien"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "it",
+			"code_trans": "he",
+			"language_trans": "איטלקית"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "it",
+			"code_trans": "it",
+			"language_trans": "Italiano"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "it",
+			"code_trans": "ru",
+			"language_trans": "итальянский"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "it",
+			"code_trans": "zh",
+			"language_trans": "意大利"
+		}]
+	},
+	{
+		"creationTime": 1524646488803,
+		"lastModTime": 1524646550713,
+		"version": 1,
+		"code": "jjjjjj",
+		"icon": "ar",
+		"forFront": true,
+		"forAdmin": true,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1524646488810,
+			"lastModTime": 1524646550717,
+			"version": 1,
+			"code": "jjjjjj",
+			"code_trans": "en",
+			"language_trans": "jjjj"
+		},
+		{
+			"creationTime": 1524646488810,
+			"lastModTime": 1524646550717,
+			"version": 1,
+			"code": "jjjjjj",
+			"code_trans": "es",
+			"language_trans": "jjjj"
+		},
+		{
+			"creationTime": 1524646488810,
+			"lastModTime": 1524646550713,
+			"version": 1,
+			"code": "jjjjjj",
+			"code_trans": "he",
+			"language_trans": "jjj"
+		},
+		{
+			"creationTime": 1524646488810,
+			"lastModTime": 1524646550717,
+			"version": 1,
+			"code": "jjjjjj",
+			"code_trans": "yyyy",
+			"language_trans": "jjj"
+		}]
+	},
+	{
+		"creationTime": 1524734353550,
+		"lastModTime": null,
+		"version": 0,
+		"code": "pepe",
+		"icon": "jp",
+		"forFront": true,
+		"forAdmin": true,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "de",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "en",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "es",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "fr",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "he",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "it",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "jjjjjj",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "ru",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353563,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "yyyy",
+			"language_trans": "pepe"
+		},
+		{
+			"creationTime": 1524734353560,
+			"lastModTime": null,
+			"version": 0,
+			"code": "pepe",
+			"code_trans": "zh",
+			"language_trans": "pepe"
+		}]
+	},
+	{
+		"creationTime": 1519210912637,
+		"lastModTime": null,
+		"version": 0,
+		"code": "ru",
+		"icon": "ru",
+		"forFront": true,
+		"forAdmin": false,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "ru",
+			"code_trans": "de",
+			"language_trans": "Russisch"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "ru",
+			"code_trans": "en",
+			"language_trans": "Russian"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "ru",
+			"code_trans": "es",
+			"language_trans": "Ruso"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "ru",
+			"code_trans": "fr",
+			"language_trans": "Russe"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "ru",
+			"code_trans": "he",
+			"language_trans": "רוסית"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "ru",
+			"code_trans": "it",
+			"language_trans": "Russo"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "ru",
+			"code_trans": "ru",
+			"language_trans": "русский"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "ru",
+			"code_trans": "zh",
+			"language_trans": "俄"
+		}]
+	},
+	{
+		"creationTime": 1526645677907,
+		"lastModTime": null,
+		"version": 0,
+		"code": "us",
+		"icon": "us",
+		"forFront": true,
+		"forAdmin": true,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1526645677933,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "de",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677930,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "en",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677930,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "es",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677933,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "fr",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677930,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "he",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677930,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "it",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677930,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "jjjjjj",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677930,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "pepe",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677930,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "ru",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677933,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "yyyy",
+			"language_trans": "USA"
+		},
+		{
+			"creationTime": 1526645677930,
+			"lastModTime": null,
+			"version": 0,
+			"code": "us",
+			"code_trans": "zh",
+			"language_trans": "USA"
+		}]
+	},
+	{
+		"creationTime": 1523283910233,
+		"lastModTime": 1524646406320,
+		"version": 5,
+		"code": "yyyy",
+		"icon": "se",
+		"forFront": true,
+		"forAdmin": true,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1523283910260,
+			"lastModTime": 1524646406323,
+			"version": 5,
+			"code": "yyyy",
+			"code_trans": "de",
+			"language_trans": "as"
+		},
+		{
+			"creationTime": 1523283910260,
+			"lastModTime": 1524646406323,
+			"version": 5,
+			"code": "yyyy",
+			"code_trans": "en",
+			"language_trans": "test"
+		},
+		{
+			"creationTime": 1523283910260,
+			"lastModTime": 1524646406323,
+			"version": 5,
+			"code": "yyyy",
+			"code_trans": "es",
+			"language_trans": "df"
+		},
+		{
+			"creationTime": 1523283910260,
+			"lastModTime": 1524646406323,
+			"version": 5,
+			"code": "yyyy",
+			"code_trans": "fr",
+			"language_trans": "fg"
+		},
+		{
+			"creationTime": 1523283910260,
+			"lastModTime": 1524646406323,
+			"version": 5,
+			"code": "yyyy",
+			"code_trans": "he",
+			"language_trans": "fg"
+		},
+		{
+			"creationTime": 1523283910260,
+			"lastModTime": 1524646406323,
+			"version": 5,
+			"code": "yyyy",
+			"code_trans": "it",
+			"language_trans": "fg"
+		},
+		{
+			"creationTime": 1523283910260,
+			"lastModTime": 1524646406327,
+			"version": 5,
+			"code": "yyyy",
+			"code_trans": "ru",
+			"language_trans": "fg"
+		},
+		{
+			"creationTime": 1523283910260,
+			"lastModTime": 1524646406323,
+			"version": 5,
+			"code": "yyyy",
+			"code_trans": "zh",
+			"language_trans": "fg"
+		}]
+	},
+	{
+		"creationTime": 1519210912637,
+		"lastModTime": null,
+		"version": 0,
+		"code": "zh",
+		"icon": "cn",
+		"forFront": true,
+		"forAdmin": false,
+		"bfmLocaleTransSet": [{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "zh",
+			"code_trans": "de",
+			"language_trans": "Chinesisch"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "zh",
+			"code_trans": "en",
+			"language_trans": "Chinese"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "zh",
+			"code_trans": "es",
+			"language_trans": "Chino"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "zh",
+			"code_trans": "fr",
+			"language_trans": "Chinois"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "zh",
+			"code_trans": "he",
+			"language_trans": "סינית"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "zh",
+			"code_trans": "it",
+			"language_trans": "Cinese"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "zh",
+			"code_trans": "ru",
+			"language_trans": "китайский"
+		},
+		{
+			"creationTime": 1519210912730,
+			"lastModTime": null,
+			"version": 0,
+			"code": "zh",
+			"code_trans": "zh",
+			"language_trans": "中国"
+		}]
+	}]
+}

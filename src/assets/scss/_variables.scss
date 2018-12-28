@@ -1,0 +1,52 @@
+// Bootstrap Overrides
+$grid-columns: 12;
+$grid-gutter-width: 21px;
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 480px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 420px,
+  md: 720px,
+  lg: 960px,
+  xl: 1253px
+);
+
+// Color System
+$black-color: #000;
+$white-color: #fff;
+$dirty-white-color: #fdfcfb;
+$light-color: #f5f5f5;
+$dark-color: #2c2c2c;
+$dark-gray-color: #5e5e5e;
+$gray-color: #a4a4a4;
+$light-gray-color: #d3d3d3;
+$ash-color: #f6f3ee;
+$cyan-color: #00B0CA;
+$orange-color: #FFA100;
+$red-color: #9e192d;
+$pink-color: #edddda;
+
+$gray-liner: #5E5E5E;
+$gray-font: #8f8f8f;
+$mid-gray: #454545;
+$maroon: #9e182c;
+$lightest-gray: #e8e8e8;
+$lighter-gray: #F2F2F2;
+$red: #C2002F;
+
+$body-font-family: 'Museo Sans';
+$body-font-size: 14px;
+$body-font-weight: 300;
+$body-line-height: 1.4em;
+
+$multitab-bg-color: rgba(0, 0, 0, 0.63);

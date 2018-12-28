@@ -1,0 +1,63 @@
+<section id="dates-selection">
+    <div class="container">
+      <div class="row secondary-header">
+        <div class="col-md-4 responsive-hide">
+          <div class="row date-details">
+            <div class="secondary-arrow-div col-md-1">
+              <i class="icon-previous" aria-hidden="true"></i>
+            </div>
+            <div class="col-md-9">
+              <div class="row">
+                <div class="col-md-1"> </div>
+                <div class="col-md-1 red-font">YESTERDAY</div>
+              </div>
+              <div class="row ">
+                <div class="col-md-1"> </div>
+                <div class="col-md-1 date ">{{dates[0].substring(0,2)}}</div>
+                <div class="col-md-1 ">
+                  <div class="day">{{day[0]}}</div>
+                  <div class="month">{{month[0]}}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mid-div">
+          <div class="row date-details">
+            <div class="col-md-5"> </div>
+            <div class="col-md-1 center-date red-font">TODAY</div>
+          </div>
+          <div class="row ">
+            <div class="col-5 responsive-hide"> </div>
+            <div class="col-4 desktop-hide"> </div>
+            <div class="col-1 date ">{{dates[1].substring(0,2)}}</div>
+            <div class="col-1 ">
+              <div class="day">{{day[1]}}</div>
+              <div class="month">{{month[1]}}</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 responsive-hide">
+          <div class="row date-details">
+            <div class="col-md-9 ">
+              <div class="row">
+                <div class="col-md-8"> </div>
+                <div class="col-md-1 red-font">TOMORROW</div>
+              </div>
+              <div class="row ">
+                <div class="col-md-8"> </div>
+                <div class="col-md-1 date ">{{dates[2].substring(0,2)}}</div>
+                <div class="col-md-1 ">
+                  <div class="day">{{day[2]}}</div>
+                  <div class="month">{{month[2]}}</div>
+                </div>
+              </div>
+            </div>
+            <div class="secondary-arrow-div arrow-right col-md-1">
+              <i class="icon-next" aria-hidden="true"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

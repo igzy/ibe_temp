@@ -1,0 +1,57 @@
+@import './../../../../../styles';
+@import '../flight-search/flight-search.component';
+
+.last-name-wrapper{
+    margin: 0 0 0.714em 0;
+}
+.booking-num-wrapper{
+    margin: 0 0 0.714em 0;
+}
+
+.checkin-button {
+    background-color: $white-color;
+    color: $red-color;
+    font-weight: 900;
+    font-size: 1.143em;
+    height: 40px;
+}
+
+@include media-breakpoint-up(lg) {
+    .last-name-wrapper{
+        // max-width: 550px;
+        // margin: 0;
+    }
+    .booking-num-wrapper{
+        // max-width:385px;
+    }
+
+    .checkin-button {
+        // margin-left: 3.214em;
+        // min-width:155px;
+    }
+}
+
+@media (max-width: map-get($container-max-widths, md)) {
+
+	.input-container{
+		// padding: 0 60px;
+		color:$black-color;
+
+		.checkin-header{
+			// padding: 0px;
+		}
+
+		app-input-text /deep/{
+
+		}
+	}
+
+	button.checkin-button {
+		color: $white-color;
+		background-color: $red-color;
+		//width: 60%;
+		margin:0 auto;
+	}
+
+
+}

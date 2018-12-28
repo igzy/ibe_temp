@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "label": "Argentina (+54)",
+            "icon": "/el-al-ui/assets/flags/ar.png",
+            "name": "+54"
+        },
+        {
+            "label": "Australia (+61)",
+            "icon": "/el-al-ui/assets/flags/au.png",
+            "name": "+61"
+        },
+        {
+            "label": "France (+33)",
+            "icon": "/el-al-ui/assets/flags/fr.png",
+            "name": "+33"
+        },
+        {
+            "label": "Germany (+49)",
+            "icon": "/el-al-ui/assets/flags/de.png",
+            "name": "+49"
+        },
+        {
+            "label": "Israel (+972)",
+            "icon": "/el-al-ui/assets/flags/il.png",
+            "name": "+972"
+        },
+        {
+            "label": "Italia (+39)",
+            "icon": "/el-al-ui/assets/flags/it.png",
+            "name": "+39"
+        },
+        {
+            "label": "Spain (+34)",
+            "icon": "/el-al-ui/assets/flags/sp.png",
+            "name": "+34"
+        },
+        {
+            "label": "United Kingdom (+44)",
+            "icon": "/el-al-ui/assets/flags/uk.png",
+            "name": "+44"
+        },
+        {
+            "label": "United States (+1)",
+            "icon": "/el-al-ui/assets/flags/us.png",
+            "name": "+1"
+        }
+    ]
+}

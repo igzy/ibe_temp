@@ -1,0 +1,154 @@
+@import "../../../../../assets/scss/variables.scss";
+
+    .flight-info{
+      // width: 88.285em;
+      margin-bottom: 4em;
+    }
+  
+    .desktop-hide{
+      display: none;
+    }
+  
+    .table-header{
+      font-size: 1.071em;
+      letter-spacing: -0.014em;
+      line-height: 3.642em;
+      font-weight: 500;
+      color: $mid-gray;
+    }
+  
+    // tr{
+    //   height: 7.428em;
+    // }
+  
+    .flight-number-box{
+      width: 96px;
+      height: 40px;
+      opacity: 0.76;
+      border-radius: 13px;
+      background-color: #eeeeee;
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      font-weight: 700;
+      color: #b9122a;
+    }
+  
+    .flight-status-on-time{
+      width: 102px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #ffffff;
+      border: solid 1px #33981b;
+      text-align: center;
+      color: #33981b;
+      font-weight: 500;
+  
+      .status-message{
+        margin-top: 10px;
+      }
+  
+    }
+  
+    .flight-status-delayed{
+      width: 102px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #ffffff;
+      border: solid 1px #b9122a;
+      text-align: center;
+      color: #b9122a;
+      font-weight: 500;
+  
+      .status-message{
+        margin-top: 10px;
+      }
+  
+    }
+  
+    .flight-status-cancelled{
+      width: 102px;
+      height: 40px;
+      border-radius: 20px;
+      background-color: #454545;
+      text-align: center;
+      color: #ffffff;
+      font-weight: 500;
+  
+      .status-message{
+        padding-top: 10px;
+      }
+  
+    }
+  
+    .info-content{
+      border-bottom: 1px solid $gray-liner;
+      padding-top: 20px;
+  
+      .air-time{
+        font-weight: 300;
+        font-size: 1.428em;
+        color: #222222;
+        letter-spacing: -0.2px;
+      }
+  
+      .air-location{
+        color: #656565;
+        font-size: 1.285em;
+        font-weight: 300;
+        letter-spacing: -0.2px;
+      }
+  
+      .air-terminal{
+        color: $gray-font;
+        font-weight: 100;
+        font-size: 0.928em;
+        letter-spacing: -0.1px;
+      }
+  
+      .air-provider{
+        color: $maroon;
+        font-weight: 300;
+        font-size: 0.928em;
+        letter-spacing: -0.1px;
+      }
+    }
+
+    // responsive
+    @media (max-width: 480px) {
+
+      .responsive-hide{
+        display: none;
+      }
+  
+      .secondary-header{
+        width: auto !important;
+      }
+  
+      .dot-routes{
+        display: none;
+      }
+  
+      #flight-info-content{
+        .flight-info{
+          width: auto !important;
+        }
+      }
+  
+      .desktop-hide{
+        display: initial !important;
+      }
+  
+      .secondary-header{
+        background-color: transparent !important;
+        padding: 0 10px 0 10px;
+      }
+  
+      #flight-info-content{
+        tr{
+          height: auto;
+        }
+      }
+    }
+  
+  

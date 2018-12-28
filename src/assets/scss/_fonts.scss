@@ -1,0 +1,79 @@
+@import 'mixins';
+
+@include font-face('Museo', '/assets/fonts/museo100-regular-webfont', 100, normal, woff2 woff);
+@include font-face('Museo', '/assets/fonts/museo300-regular-webfont', 300, normal, ttf woff2 woff);
+@include font-face('Museo', '/assets/fonts/museo500-regular-webfont', 500, normal, ttf woff2 woff);
+@include font-face('Museo', '/assets/fonts/museo700-regular-webfont', 700, normal, woff2 woff);
+@include font-face('Museo', '/assets/fonts/museo900-regular-webfont', 900, normal, woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_100-webfont', 100, normal, ttf woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_100_italic-webfont', 100, italic, ttf woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_300-webfont', 300, normal, woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_300_italic-webfont', 300, italic, ttf woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_500-webfont', 500, normal, woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_500_italic-webfont', 500, italic, ttf woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_700-webfont', 700, normal, ttf woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_700_italic-webfont', 700, italic, woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_900-webfont', 900, normal, ttf woff2 woff);
+@include font-face('Museo Sans', '/assets/fonts/museosans_900_italic-webfont', 900, italic, ttf woff2 woff);
+@include font-face('Glpyh', '/assets/fonts/glyph', normal, normal, ttf svg woff eot);
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'Glpyh' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-stripe-card:before {
+  content: "\e900";
+}
+.icon-close:before {
+  content: "\e909";
+}
+.icon-remove:before {
+  content: "\e901";
+}
+.icon-error-outline:before {
+  content: "\e902";
+}
+.icon-from:before {
+  content: "\e921";
+}
+.icon-minus-outline:before {
+  content: "\e90e";
+}
+.icon-plus-outline:before {
+  content: "\e911";
+}
+.icon-to:before {
+  content: "\e922";
+}
+.icon-user:before {
+  content: "\e908";
+}
+.icon-search:before {
+  content: "\e90a";
+}
+.icon-passenger:before {
+  content: "\e91e";
+}
+.icon-calendar:before {
+  content: "\e91d";
+}
+.icon-arrow-down:before {
+  content: "\e986";
+}
+.icon-arrow-up:before {
+  content: "\e987";
+}
+.icon-card:before {
+  content: "\e906";
+}

@@ -1,0 +1,61 @@
+@import './../../../../../styles';
+@import '../flight-search/flight-search.component';
+
+:host ::ng-deep {
+
+    .tab-content {
+      padding: 0;
+    }
+  }
+
+.last-name-wrapper{
+    // margin: 0 0 0.714em 0;
+}
+.booking-num-wrapper{
+    // margin: 0 0 0.714em 0;
+}
+.search-button {
+    background-color: $white-color;
+    color: $red-color;
+    font-weight: 900;
+    font-size: 1.143em;
+    height: 40px;
+}
+
+@include media-breakpoint-up(lg) {
+    .last-name-wrapper{
+        // min-width: 550px;
+        // margin: 0;
+    }
+    .booking-num-wrapper{
+        // min-width:385px;
+    }
+
+    .search-button {
+        // margin-left: 3.214em;
+        // min-width:155px;
+    }
+}
+
+
+@media (max-width: map-get($container-max-widths, md)) {
+
+	.input-container{
+		// padding: 0 60px;
+		color:$black-color;
+
+		.checkin-header{
+			// padding: 0px;
+		}
+
+	}
+
+	button.search-button {
+		color: $white-color;
+		background-color: $red-color;
+		width: 60%;
+		margin:0 auto;
+	}
+
+
+}

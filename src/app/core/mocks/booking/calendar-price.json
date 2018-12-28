@@ -1,0 +1,204 @@
+{
+    "data": {
+        "outbound": {
+            "priceItems": [
+                {
+                    "date": "2018-10-21T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 452.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                }
+            ]
+        },
+        "inbound": {
+            "priceItems": [
+                {
+                    "date": "2018-10-21T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 881267.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-22T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 1267.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-23T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 1267.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-24T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 897.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-25T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 897.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-26T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 897.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-27T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": null,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-28T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 452.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-29T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 387.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-30T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 812.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-10-31T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 332.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-11-01T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 357.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-11-02T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 357.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-11-03T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": null,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                },
+                {
+                    "date": "2018-11-04T00:00:00.000Z",
+                    "price": {
+                        "cash": {
+                            "amount": 357.81,
+                            "currencyCode": "USD"
+                        }
+                    },
+                    "pictureUrl": null,
+                    "description": null,
+                    "isDeal": false
+                }
+            ]
+        }
+    }
+}

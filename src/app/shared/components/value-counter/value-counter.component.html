@@ -1,0 +1,24 @@
+<div id="valCounterWrapper"class="counter-div" >
+  <div id="valCounterRowWrapper" class="row">
+    <div id="valCounterLabelWrapper" class="col-lg-6 col-8 col-sm-6 col-md-6 ">
+      <span id="valCounterLabel">{{ label }} </span>
+      <span id="valCounterSubLabel" class="subLabel">{{ subLabel }}</span>
+    </div>
+    <!-- <div class="col-lg-1 col-1 col-sm-1 col-md-1"></div> -->
+    <div id="valCounterWrapper" class="col-lg-6 col-4 col-sm-6 col-md-6">
+      <div id="valCounterWrapperRow" class="row centerAlign">
+        <div id="valCounterMinusIconWrapper" class="col-lg-4 col-4 col-sm-4 col-md-4 px-0">
+		  <span id="valCounterMinusIcon" class="icon-minus-outline icon-button"
+		  [ngClass]="{'unclickable': value === 0}"
+		  (click)="decrementClicked()">
+		</span>
+        </div>
+		<div id="valCounterValue" class="col-lg-4 col-4 col-sm-4 col-md-4 px-0  counter-value "
+			[ngStyle]="{'font-weight': value === 0 ? 'normal' : 'bold'}">{{ value }}</div>
+        <div id="valCounterPlusIconWrapper" class="col-lg-4 col-4 col-sm-4 col-md-4 px-0 ">
+          <span id="valCounterPlusIcon" class="icon-plus-outline icon-button" (click)="incrementClicked()"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

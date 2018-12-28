@@ -1,0 +1,67 @@
+
+<ng-container *ngIf="displayFor !== 'date' && selectedObject !== null">
+	<div id="valueBox" class="selected-object single row"
+	*ngIf="( (displayFor == 'city' && displayObject.header !== '' ) ||  ( displayFor == 'traveler' &&  displayObject.header !== '')) ">
+		<div id="valueBoxSmallHeaderWrapper" class="col-7 text-right">
+			<div id="valueBoxSmallHeader" class="header">{{ displayObject.header }}</div>
+			<div id="valueBoxSmallHeaderWrapper" class="subHeader">{{ displayObject.subHeader }}</div>
+		</div>
+		<div id="valueBoxBigHeader" class="col-5 bigShortHeader">
+			{{ displayObject.bigShortHeader }}
+		</div>
+	</div>
+	<div [ngClass]="direction === 'rtl' ? 'pr-3' :  'pl-3'" class="single row mobile-view"
+	*ngIf="( (displayFor == 'city' && displayObject.header !== '' ) ||  ( displayFor == 'traveler' &&  displayObject.header !== '') || (displayFor == 'paymentMethod' && displayObject.header !== '' ))">
+		<div class="col-12 text-left">
+			{{ displayObject.mobileDisplayLabel }}
+		</div>
+	</div>
+	<!-- <div class="single row mobile-view"
+	*ngIf="( (displayFor == 'paymentMethod' && displayObject.header !== '' ) ||  ( displayFor == 'traveler' &&  displayObject.header !== '')) ">
+		<div class="col-12 text-left">
+			{{ displayObject.mobileDisplayLabel }}
+		</div>
+	</div> -->
+</ng-container>
+<ng-container *ngIf="displayFor === 'date'">
+	<div [ngClass]="direction === 'rtl' ? 'selected-object-rtl' : 'selected-object'" class="double row col-md-12" *ngIf="displayObject.departureDate.day !== ''">
+		<div class="col-6">
+			<div class="row" *ngIf="!checkDateIsNan(displayObject.departureDate.date)">
+				<div class="col-7 text-right px-md-0">
+					<div class="header">{{ displayObject.departureDate.month }}</div>
+					<div class="subHeader">{{ displayObject.departureDate.day }}</div>
+				</div>
+				<div class="col-5 bigShortHeader">
+					{{ displayObject.departureDate.date }}
+				</div>
+			</div>
+
+		</div>
+		<div class="col-6" *ngIf="!checkDateIsNan(displayObject.returnDate.date) && displayObject.returnDate.day !== ''">
+			<div class="row">
+				<div class="col-7 text-right px-md-0">
+					<div class="header">{{ displayObject.returnDate.month }}</div>
+					<div class="subHeader">{{ displayObject.returnDate.day }}</div>
+				</div>
+				<div class="col-5 bigShortHeader">
+					{{ displayObject.returnDate.date }}
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="double row col-md-12 mobile-view-date" *ngIf="displayObject.departureDate.day !== ''">
+			<div class="col-6">
+				<div class="text-center" *ngIf="!checkDateIsNan(displayObject.departureDate.date)">
+					<span [innerHTML]="displayObject.departureDate.mobileDepartureLabel "></span>
+				</div>
+
+			</div>
+			<div class="col-6" *ngIf="!checkDateIsNan(displayObject.returnDate.date) && displayObject.returnDate.day !== ''">
+				<div class="text-center">
+					<span [innerHTML]="displayObject.returnDate.mobileReturnLabel "> </span>
+				</div>
+			</div>
+		</div>
+</ng-container>
+
+

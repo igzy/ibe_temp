@@ -1,0 +1,41 @@
+{
+	"status": "200",
+	"errors": null,
+	"data": {
+		"market": "US",
+		"entity": 1,
+		"origin": "AMM",
+		"departureDate": "2018-11-20T07:35:00",
+		"directFlight": true,
+		"tripType": "R",
+		"cabin": "E",
+		"returns": [{
+				"returnDate": "2018-11-21T05:50:00", 
+				"price": 223.96
+			}, {
+				"returnDate": "2018-11-22T05:50:00",
+				"price": 233.96
+			}, {
+				"returnDate": "2018-11-23T05:50:00",
+				"price": 243.96
+			}, {
+				"returnDate": "2018-11-24T05:50:00",
+				"price": 253.96
+			}, {
+				"returnDate": "2018-11-25T05:50:00",
+				"price": 263.96
+			}, {
+				"returnDate": "2018-11-27T05:50:00",
+				"price": 178.6
+			}, {
+				"returnDate": "2018-11-28T05:50:00",
+				"price": 273.96
+			}, {
+				"returnDate": "2018-11-30T05:50:00",
+				"price": 283.96
+			}
+		],
+		"destination": "BEY",
+		"currency": "PLN"
+	}
+}

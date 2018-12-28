@@ -1,0 +1,10 @@
+@import "../../../../../assets/scss/_variables.scss";
+.history-card{
+	color: $white-color;
+	background: transparent;
+	border:1px solid $white-color;
+	font-weight: 600;
+	max-height: 3.714em;
+	overflow:hidden;
+	cursor: pointer;
+}

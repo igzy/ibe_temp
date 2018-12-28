@@ -1,0 +1,46 @@
+@import './../../../../styles';
+
+.radio-button-wrapper{
+    padding: 30px 0 0 0;
+    
+}
+
+.modal-wrapper{
+     display: none; 
+}
+
+.confirmButton{
+	margin-top: 1.429em;
+	color: $white-color;
+	background: $red-color;
+}
+
+
+
+@media (max-width: map-get($container-max-widths, md)) {
+    .radio-button-wrapper{
+        display: none;
+    }
+
+    .modal-wrapper{
+        
+        display: block;
+        .dropdown-wrapper{
+            background-color: $white-color!important;
+            max-width: unset;
+            padding: 0;
+            position: fixed;
+            z-index: 9999;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+
+            .mobile-header-wrapper {
+                border-bottom: 1px solid $red-color;
+                margin-bottom: 10%;
+            }
+        }
+    }
+}

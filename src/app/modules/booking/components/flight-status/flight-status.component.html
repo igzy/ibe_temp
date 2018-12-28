@@ -1,0 +1,101 @@
+<app-mobile-header [title]="translations?.BOOKING_APP?.FLIGHT_STATUS?.TITLE" [rightIcon]="'icon-remove1'"></app-mobile-header>
+<div class="flight-search flight-status">
+	<div class="row pb-md-5">
+		<div class="col-12">
+			<app-tabs [tabHeaders]="tabHeaders" [tabHeadClass]="'booking-header'" (selectionChange)="changeTab($event)"></app-tabs>
+
+		</div>
+	</div>
+
+	<!-- Route -->
+	<div class="flight-search-form-container flight-route-form" *ngIf="activeTab === tabHeaders[0]">
+		<form [formGroup]='flightRouteStatusForm'>
+			<div class="row mx-0 px-4 px-md-0 pb-2 pb-md-0 ">
+				<div class="col-md-5 col-12 pl-md-0 px-0 ">
+					<div class=" col-12  non-multi-from-wrapper pl-md-0 pb-3 pb-md-0">
+						<app-autocomplete
+							[dropdownLabel]="translations?.BOOKING_APP?.FLIGHT_STATUS?.DEPARTURE"
+							[selectLabel]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SELECT_FROM"
+							[leftIcon]="'icon-from'"
+							[rightIcon]="'icon-arrow-down'"
+							(notify)="departureChanged($event)"
+							formControlName="departure"
+							name="departure"
+							[control]="flightRouteStatusForm.controls['departure']"
+							[source]="originSource"
+							[translations]="translations">
+						</app-autocomplete>
+						<div class="error-message"  *ngIf="flightRouteStatusForm.get('departure').invalid && flightRouteStatusForm.get('departure').touched">
+							{{translations?.BOOKING_APP?.FLIGHT_STATUS?.ERRORS?.ERROR_DEPARTURE_REQUIRED}}
+						</div>
+					</div>
+				</div>
+				<div class="col-md-5 col-12  px-0">
+					<div class=" col-12  non-multi-to-wrapper pl-md-0 pb-3 pb-md-0">
+						<app-autocomplete
+							[dropdownLabel]="translations?.BOOKING_APP?.FLIGHT_STATUS?.ARRIVAL"
+							[selectLabel]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_SELECT_TO"
+							[leftIcon]="'icon-to'"
+							[rightIcon]="'icon-arrow-down'"
+							formControlName="arrival"
+							name="arrival"
+							[control]="flightRouteStatusForm.controls['arrival']"
+							[source]="destinationSource"
+							[translations]="translations">
+						</app-autocomplete>
+						<div class="error-message" *ngIf="flightRouteStatusForm.get('arrival').invalid && flightRouteStatusForm.get('arrival').touched">
+							{{translations?.BOOKING_APP?.FLIGHT_STATUS?.ERRORS?.ERROR_ARRIVAL_REQUIRED}}
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 col-12 pr-md-0">
+					<div class="col-12">
+						<button (click)="onRedirectCheckStatus()" class="btn btn-block search-button">{{translations?.BOOKING_APP?.FLIGHT_STATUS?.CHECK_STATUS_BTN}}</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+	<!-- Flight Number -->
+	<div class="flight-search-form-container flight-number-form" *ngIf="activeTab === tabHeaders[1]">
+		<form [formGroup]='flightNumberStatusForm'>
+			<div class="row mx-0 px-4 px-md-0 pb-2 pb-md-0">
+				<div class="col-md-10 pl-md-0 px-0 ">
+					<div class="col-12 non-multi-to-wrapper pl-md-0 pb-3 pb-md-0">
+						<!-- <app-autocomplete
+							[dropdownLabel]="'Flight Number'"
+							[leftIcon]="'icon-user'"
+							formControlName="flightNumber"
+							name="flightNumber"
+							[control]="flightNumberStatusForm.controls['flightNumber']"
+							[source]="originSource">
+						</app-autocomplete> -->
+						<app-input-text [inputPlaceHolder]="translations?.BOOKING_APP?.FLIGHT_STATUS?.FLIGHT_NUMBER_PLACE_HOLDER"
+							[leftIcon]="'icon-from'"
+							[prefixDisplay]="flightNumberPrefix"
+							formControlName="flightNumber"
+							[control]="flightNumberStatusForm.controls['flightNumber']"
+							[size]="4"
+							(keypress)="numericOnly($event)">
+						</app-input-text>
+						<div class="error-message" *ngIf="flightNumberStatusForm.get('flightNumber').invalid && flightNumberStatusForm.get('flightNumber').touched">
+							{{ ( flightNumberStatusForm.controls['flightNumber'].errors?.required ?  
+								translations?.BOOKING_APP?.FLIGHT_STATUS?.ERRORS?.ERROR_FLIGHT_NUM_REQUIRED  :  
+								translations?.BOOKING_APP?.FLIGHT_STATUS?.ERRORS?.ERROR_FLIGHT_NUM_INVALID )  }}
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 pr-md-0">
+					<div class="col-12">
+						<button (click)="onRedirectCheckStatus()" class="btn btn-block search-button">{{translations?.BOOKING_APP?.FLIGHT_STATUS?.CHECK_STATUS_BTN}}</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+
+
+

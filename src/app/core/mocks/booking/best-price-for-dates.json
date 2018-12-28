@@ -1,0 +1,44 @@
+{
+	"status": "200",
+	"errors": null,
+	"data": {
+		"bestPriceForDates": [{
+				"arrivalAirport": "BEY",
+				"bestTotalPrice": 269.32,
+				"cabinClass": "E",
+				"currency": "PLN", 
+				"departureAirport": "AMM",
+			"departureDate": "2018-11-29T07:35:00", 
+				"insertionDate": "2018-10-11T14:48:52",
+				"market": "US",
+				"returnDate": "2018-12-25T12:10:00", 
+				"tripType": "R",
+				"monthlyMinimum": false
+			}, {
+				"arrivalAirport": "BEY",
+				"bestTotalPrice": 223.96,
+				"cabinClass": "E",
+				"currency": "PLN",
+				"departureAirport": "AMM",
+				"departureDate": "2018-11-30T07:35:00",
+				"insertionDate": "2018-10-11T14:48:52",
+				"market": "US",
+				"returnDate": "2018-12-27T05:50:00",
+				"tripType": "R",
+				"monthlyMinimum": false
+			}, {
+				"arrivalAirport": "BEY",
+				"bestTotalPrice": 269.32,
+				"cabinClass": "E",
+				"currency": "PLN",
+				"departureAirport": "AMM",
+				"departureDate": "2018-12-01T07:35:00",
+				"insertionDate": "2018-10-11T14:48:52",
+				"market": "US",
+				"returnDate": "2018-12-28T05:50:00",
+				"tripType": "R",
+				"monthlyMinimum": false
+			}
+		]
+    }
+}

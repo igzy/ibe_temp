@@ -1,0 +1,20 @@
+<div id="bookingAppContainerId" dir="{{direction}}" class="container">
+  <!-- <app-booking-menu [translations]="translations" ></app-booking-menu> -->
+  <!-- <router-outlet></router-outlet> -->
+  <app-modal *ngIf="!authorized" [translations]="translations"></app-modal>
+  <div *ngIf="tab === ''">
+    <app-booking-menu [redemption]="redemption" [translations]="translations"></app-booking-menu>
+  </div>
+  <div *ngIf="tab === 'bf'">
+    <app-book-trip [redemption]="redemption" [translations]="translations"></app-book-trip>
+  </div>
+  <div *ngIf="tab === 'ci'">
+    <app-check-in-trip [translations]="translations"></app-check-in-trip>
+  </div>
+  <div  *ngIf="tab === 'mb'">
+    <app-manage-your-booking [translations]="translations"></app-manage-your-booking>
+  </div>
+  <div *ngIf="tab === 'fe'">
+    <app-flight-info [translations]="translations"></app-flight-info>
+  </div>
+</div>

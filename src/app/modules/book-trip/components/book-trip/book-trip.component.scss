@@ -1,0 +1,24 @@
+@import './../../../../../assets/scss/variables';
+
+#booktrip-id{
+    border-radius: 2px;
+    background-color: $dark-gray-color;
+    padding: 20px;
+}
+
+.showSearchHistoryWrapper{
+    .btn-search{
+          color: $white-color;
+          background:transparent;
+          border: none;
+          cursor: pointer;
+      }
+  }
+
+
+
+@media (max-width: map-get($container-max-widths, md)) {
+    .showSearchHistoryWrapper{
+      display:none;
+    }
+  }

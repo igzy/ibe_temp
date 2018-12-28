@@ -1,0 +1,46 @@
+<div class="container">
+    <div class="flight-info">
+      <table style="width: 100%">
+        <tr class="table-header row responsive-hide">
+          <th class="col-lg-2">{{translations?.BOOKING_APP?.FLIGHT_STATUS?.FLIGHT_NUMBER}}</th>
+          <th class="col-lg-2"><span class="icon-from"></span>{{translations?.BOOKING_APP?.FLIGHT_STATUS?.DEPARTURE}}</th>
+          <th class="col-lg-4 dot-routes"> </th>
+          <th class="col-lg-2"><span class="icon-to"></span>{{translations?.BOOKING_APP?.FLIGHT_STATUS?.ARRIVAL}}</th>
+          <th class="col-lg-2">STATUS</th>
+        </tr>
+        
+        <tr class="info-content row">
+          <td class="col-lg-2">
+            <div class="desktop-hide table-header">Flight number</div>
+            <div class="flight-number-box">AT098</div>
+          </td>
+          <td class="col-lg-2">
+            <div class="desktop-hide table-header"><span class="icon-from"></span>Departure</div>
+            <div>
+              <span class="air-time">16:50</span> <span class="air-location">Madrid (MAD)</span><br>
+              <span class="air-terminal">Adolfo Suarez Airport T4</span><br>
+              <span class="air-provider">Royal Air Maroc</span>
+            </div>
+          </td>
+          <td style="text-align:center" class="dot-routes col-lg-4">
+            <img class="airplane-1" src="../assets/images/dots_route.png">
+          </td>
+          <td class="col-lg-2">
+            <div class="desktop-hide table-header"><span class="icon-to"></span>Arrival</div>
+            <div>
+              <span class="air-time">19:18</span> <span class="air-location">Casablanca (CMN)</span><br>
+              <span class="air-terminal">Mohammed IV Airport T1</span><br>
+              <br>
+            </div>
+          </td>
+          <td class="col-lg-1">
+            <div class="desktop-hide table-header">Status</div>
+            <div class="flight-status-delayed">
+              <div class="status-message">Delayed</div>
+            </div>
+            <div style="text-align: center; width: 100px">2h 12min</div>
+          </td>
+        </tr>            
+      </table>
+    </div>
+  </div>

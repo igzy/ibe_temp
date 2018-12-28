@@ -1,0 +1,63 @@
+
+<app-dropdown [dropdownLabel]="(isMobile && ( (departureDateControl?.valid && isOneway) || (returnDateControl?.valid  && !isOneway)) ? ' ' : translations?.BOOKING_APP?.BOOK_A_FLIGHT?.DATES)" [disableClick]="disabled" [leftIcon]="'icon-calendar'" [rightIcon]="'icon-arrow-down'" (dropdownClicked)="onClick()" [customFocus]="dateFocus">
+</app-dropdown>
+
+<div class="ddw-icon-div col-md-12 px-2 d-inline-flex" *ngIf="dp.isOpen() && !isMobile">
+	<i id="inputIconLeft" class="col-1 icon-calendar px-0" [ngClass]="leftIcon"></i>
+	<span class="col-10 datepicker-label"  [ngClass]="{'d-none': isMobile, 'd-block': !isMobile}">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.DATES}}</span>
+	<i class="col-1 drop-down icon-arrow-up px-0" [ngClass]="rightIcon"></i>
+</div>
+
+<div class="datepicker px-0">
+	<div class="datepicker-calendar" [ngClass]="{'opened': dp.isOpen()}">
+		<div class="datepicker-state" #dpstate *ngIf="dp.isOpen()" [ngStyle]="{'width': datepickerWidth}">
+			<span [ngClass]="{'d-none': isMobile, 'd-block': !isMobile}">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.CHOOSE_YOUR_DATE}} {{ state | lowercase}}</span>
+
+			<app-mobile-header [leftIcon]="'icon-calendar'" [title]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.DATES" [rightIcon]="'icon-remove1'" (closeEvent)="closeDatepicker()" ></app-mobile-header>
+
+			<div class="row mobile-header mobile-date text-center">
+				<div class="col-6">
+					<div class="header">
+						{{ translations?.BOOKING_APP?.BOOK_A_FLIGHT?.MOBILE_DEPARTURE_DATE}}
+					</div>
+					<div class="sub-header">
+						{{ translations?.BOOKING_APP?.BOOK_A_FLIGHT?.MOBILE_CHOOSE_DATE}}
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="header">
+						{{ translations?.BOOKING_APP?.BOOK_A_FLIGHT?.MOBILE_RETURN_DATE}}
+					</div>
+					<div class="sub-header">
+						{{ translations?.BOOKING_APP?.BOOK_A_FLIGHT?.MOBILE_CHOOSE_DATE}}
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<div [ngClass]="direction === 'rtl'? 'datepicker-input-rtl' : 'datepicker-input'" #dpinput>
+			<input ngbDatepicker #dp="ngbDatepicker" [autoClose]="autoClose" [displayMonths]="displayMonths" [dayTemplate]="t" [navigation]="navigation"
+			 [minDate]="startDate || minDate" [outsideDays]="outsideDays" (dateSelect)="onDateSelection($event)" (navigate)="onNavigate($event)" hidden />
+			<ng-template #t let-date="date" let-selected="selected" let-focused="focused" let-disabled="disabled">
+				<span class="custom-day" [class.selected]="checkSelected(date)" [class.disabled]="disabled" [class.range]="!isOneway && isRange(date)"
+				 [class.faded]="!isOneway && isHovered(date) || isInside(date)" (mouseenter)="hoveredDate = date" (mouseleave)="hoveredDate = null">
+					<p class="day">
+						{{ date.day }}
+					</p>
+					<!-- [class.focused]="focused" -->
+					<div class="price-wrapper">
+						<p class="price" *ngIf="getPrice(date)">
+							{{ getPrice(date) | number : '0.0-0' }}
+							<!-- <span class="currency"> {{getCurrency(date)}}</span> -->
+						</p>
+						<p class="currency"> {{getCurrency(date)}}</p>
+					</div>
+				</span>
+			</ng-template>
+		</div>
+	</div>
+</div>
+<div class="selectedDisplayWrapper" (click)="onClick()" *ngIf="(departureDateControl?.valid && isOneway) || (returnDateControl?.valid && !isOneway)">
+	<app-display-selected [translations]="translations" [selectedObject]="{ 'departureDate': fromDate, 'returnDate': toDate }" [displayFor]="'date'"></app-display-selected>
+</div>
+

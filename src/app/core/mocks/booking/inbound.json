@@ -1,0 +1,569 @@
+{
+  "data": {
+    "trip": {
+      "returnBound": {
+        "indirectBounds": {
+          "bounds": [],
+          "showMore": {
+            "show": false,
+            "enabled": false
+          }
+        },
+        "directBounds": {
+          "bounds": [
+            {
+              "id": "20180902_WAW_1",
+              "flightId": 3,
+              "segments": [
+                {
+                  "id": "562_20180902",
+                  "segmentId": 1,
+                  "airline": {
+                    "name": "LY",
+                    "label": "El Al Israel Airlines Ltd."
+                  },
+                  "flightNumber": "562",
+                  "departureDate": "2018-09-02T22:30:00.000Z",
+                  "departureAirport": {
+                    "name": "airport-waw",
+                    "code": "WAW",
+                    "label": "Frederic Chopin",
+                    "location": {
+                      "city": "Varsovia",
+                      "cityName": "WAW",
+                      "country": "Poland",
+                      "countryName": "PL"
+                    }
+                  },
+                  "departureTerminal": {
+                    "name": ""
+                  },
+                  "arrivalDate": "2018-09-03T03:15:00.000Z",
+                  "arrivalAirport": {
+                    "name": "airport-tlv",
+                    "code": "TLV",
+                    "label": "Ben Gurion Intl",
+                    "location": {
+                      "city": "Tel Aviv",
+                      "cityName": "TLV",
+                      "country": "Israel",
+                      "countryName": "IL"
+                    }
+                  },
+                  "arrivalTerminal": {
+                    "name": "3"
+                  },
+                  "cabins": [],
+                  "mealType": "",
+                  "aircraftType": "738",
+                  "idInbound": 3
+                }
+              ],
+              "fares": [
+                {
+                  "idOffer": 14,
+                  "name": "WWFFECO1",
+                  "label": "ECONOMY_BASIC",
+                  "bookingClassName": "Economy",
+                  "cabinTypeName": "CABIN_ECONOMY",
+                  "familyName": "WWFFECO1",
+                  "netPrice": {
+                    "cash": {
+                      "amount": 308.1,
+                      "currencyCode": "USD"
+                    },
+                    "points": {
+                      "amount": null,
+                      "minAmountToConsume": null,
+                      "taxes": null
+                    }
+                  },
+                  "recommended": false,
+                  "bestValue": true,
+                  "nbSeatLeft": 1,
+                  "mixedCabins": [],
+                  "details": {
+                    "seatSelection": true,
+                    "tickedChangeFee": {
+                      "pointAmount": 40,
+                      "cashAmount": 20
+                    },
+                    "matmidBenefits": [],
+                    "refund": 0,
+                    "extra": [
+                      "HBAG",
+                      "CBAG"
+                    ]
+                  }
+                },
+                {
+                  "idOffer": 13,
+                  "name": "WWFFECO2",
+                  "label": "ECONOMY_FLEXIBLE",
+                  "bookingClassName": "Economy",
+                  "cabinTypeName": "CABIN_ECONOMY",
+                  "familyName": "WWFFECO2",
+                  "netPrice": {
+                    "cash": {
+                      "amount": 484.6,
+                      "currencyCode": "USD"
+                    },
+                    "points": {
+                      "amount": null,
+                      "minAmountToConsume": null,
+                      "taxes": null
+                    }
+                  },
+                  "recommended": false,
+                  "bestValue": true,
+                  "nbSeatLeft": 1,
+                  "mixedCabins": [],
+                  "details": {
+                    "seatSelection": true,
+                    "tickedChangeFee": {
+                      "pointAmount": 40,
+                      "cashAmount": 20
+                    },
+                    "matmidBenefits": [],
+                    "refund": 0,
+                    "extra": [
+                      "HBAG",
+                      "CBAG",
+                      "MEAL"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "20180902_WAW_1",
+              "flightId": 3,
+              "segments": [
+                {
+                  "id": "562_20180902",
+                  "segmentId": 1,
+                  "airline": {
+                    "name": "LY",
+                    "label": "El Al Israel Airlines Ltd."
+                  },
+                  "flightNumber": "562",
+                  "departureDate": "2018-09-02T22:30:00.000Z",
+                  "departureAirport": {
+                    "name": "airport-waw",
+                    "code": "WAW",
+                    "label": "Frederic Chopin",
+                    "location": {
+                      "city": "Varsovia",
+                      "cityName": "WAW",
+                      "country": "Poland",
+                      "countryName": "PL"
+                    }
+                  },
+                  "departureTerminal": {
+                    "name": ""
+                  },
+                  "arrivalDate": "2018-09-03T03:15:00.000Z",
+                  "arrivalAirport": {
+                    "name": "airport-tlv",
+                    "code": "TLV",
+                    "label": "Ben Gurion Intl",
+                    "location": {
+                      "city": "Tel Aviv",
+                      "cityName": "TLV",
+                      "country": "Israel",
+                      "countryName": "IL"
+                    }
+                  },
+                  "arrivalTerminal": {
+                    "name": "3"
+                  },
+                  "cabins": [],
+                  "mealType": "",
+                  "aircraftType": "738",
+                  "idInbound": 3
+                }
+              ],
+              "fares": [
+                {
+                  "idOffer": 14,
+                  "name": "WWFFECO1",
+                  "label": "ECONOMY_BASIC",
+                  "bookingClassName": "Economy",
+                  "cabinTypeName": "CABIN_ECONOMY",
+                  "familyName": "WWFFECO1",
+                  "netPrice": {
+                    "cash": {
+                      "amount": 308.1,
+                      "currencyCode": "USD"
+                    },
+                    "points": {
+                      "amount": null,
+                      "minAmountToConsume": null,
+                      "taxes": null
+                    }
+                  },
+                  "recommended": false,
+                  "bestValue": true,
+                  "nbSeatLeft": 1,
+                  "mixedCabins": [],
+                  "details": {
+                    "seatSelection": true,
+                    "tickedChangeFee": {
+                      "pointAmount": 40,
+                      "cashAmount": 20
+                    },
+                    "matmidBenefits": [],
+                    "refund": 0,
+                    "extra": [
+                      "HBAG",
+                      "CBAG"
+                    ]
+                  }
+                },
+                {
+                  "idOffer": 13,
+                  "name": "WWFFECO2",
+                  "label": "ECONOMY_FLEXIBLE",
+                  "bookingClassName": "Economy",
+                  "cabinTypeName": "CABIN_ECONOMY",
+                  "familyName": "WWFFECO2",
+                  "netPrice": {
+                    "cash": {
+                      "amount": 484.6,
+                      "currencyCode": "USD"
+                    },
+                    "points": {
+                      "amount": null,
+                      "minAmountToConsume": null,
+                      "taxes": null
+                    }
+                  },
+                  "recommended": false,
+                  "bestValue": true,
+                  "nbSeatLeft": 1,
+                  "mixedCabins": [],
+                  "details": {
+                    "seatSelection": true,
+                    "tickedChangeFee": {
+                      "pointAmount": 40,
+                      "cashAmount": 20
+                    },
+                    "matmidBenefits": [],
+                    "refund": 0,
+                    "extra": [
+                      "HBAG",
+                      "CBAG",
+                      "MEAL"
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "id": "20180902_WAW_1",
+              "flightId": 3,
+              "segments": [
+                {
+                  "id": "562_20180902",
+                  "segmentId": 1,
+                  "airline": {
+                    "name": "LY",
+                    "label": "El Al Israel Airlines Ltd."
+                  },
+                  "flightNumber": "562",
+                  "departureDate": "2018-09-02T22:30:00.000Z",
+                  "departureAirport": {
+                    "name": "airport-waw",
+                    "code": "WAW",
+                    "label": "Frederic Chopin",
+                    "location": {
+                      "city": "Varsovia",
+                      "cityName": "WAW",
+                      "country": "Poland",
+                      "countryName": "PL"
+                    }
+                  },
+                  "departureTerminal": {
+                    "name": ""
+                  },
+                  "arrivalDate": "2018-09-03T03:15:00.000Z",
+                  "arrivalAirport": {
+                    "name": "airport-tlv",
+                    "code": "TLV",
+                    "label": "Ben Gurion Intl",
+                    "location": {
+                      "city": "Tel Aviv",
+                      "cityName": "TLV",
+                      "country": "Israel",
+                      "countryName": "IL"
+                    }
+                  },
+                  "arrivalTerminal": {
+                    "name": "3"
+                  },
+                  "cabins": [],
+                  "mealType": "",
+                  "aircraftType": "738",
+                  "idInbound": 3
+                }
+              ],
+              "fares": [
+                {
+                  "idOffer": 14,
+                  "name": "WWFFECO1",
+                  "label": "ECONOMY_BASIC",
+                  "bookingClassName": "Economy",
+                  "cabinTypeName": "CABIN_ECONOMY",
+                  "familyName": "WWFFECO1",
+                  "netPrice": {
+                    "cash": {
+                      "amount": 308.1,
+                      "currencyCode": "USD"
+                    },
+                    "points": {
+                      "amount": null,
+                      "minAmountToConsume": null,
+                      "taxes": null
+                    }
+                  },
+                  "recommended": false,
+                  "bestValue": true,
+                  "nbSeatLeft": 1,
+                  "mixedCabins": [],
+                  "details": {
+                    "seatSelection": true,
+                    "tickedChangeFee": {
+                      "pointAmount": 40,
+                      "cashAmount": 20
+                    },
+                    "matmidBenefits": [],
+                    "refund": 0,
+                    "extra": [
+                      "HBAG",
+                      "CBAG"
+                    ]
+                  }
+                },
+                {
+                  "idOffer": 13,
+                  "name": "WWFFECO2",
+                  "label": "ECONOMY_FLEXIBLE",
+                  "bookingClassName": "Economy",
+                  "cabinTypeName": "CABIN_ECONOMY",
+                  "familyName": "WWFFECO2",
+                  "netPrice": {
+                    "cash": {
+                      "amount": 484.6,
+                      "currencyCode": "USD"
+                    },
+                    "points": {
+                      "amount": null,
+                      "minAmountToConsume": null,
+                      "taxes": null
+                    }
+                  },
+                  "recommended": false,
+                  "bestValue": true,
+                  "nbSeatLeft": 1,
+                  "mixedCabins": [],
+                  "details": {
+                    "seatSelection": true,
+                    "tickedChangeFee": {
+                      "pointAmount": 40,
+                      "cashAmount": 20
+                    },
+                    "matmidBenefits": [],
+                    "refund": 0,
+                    "extra": [
+                      "HBAG",
+                      "CBAG",
+                      "MEAL"
+                    ]
+                  }
+                }
+              ]
+            }
+          ],
+          "showMore": {
+            "show": true,
+            "enabled": true
+          }
+        },
+        "priceItems": [
+          {
+            "date": "2018-09-05T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 149.6,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-09-04T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 162.8,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-09-07T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 167.6,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-09-06T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 177.3,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-09-08T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 186.96,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-09-03T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 234.6,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-09-09T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 271.7,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-09-02T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 283.85,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-09-01T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": 488.46,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          },
+          {
+            "date": "2018-08-31T00:00:00.000Z",
+            "price": {
+              "cash": {
+                "amount": null,
+                "currencyCode": "USD"
+              },
+              "points": {
+                "amount": null,
+                "minAmountToConsume": null,
+                "taxes": null
+              }
+            },
+            "pictureUrl": null,
+            "description": null,
+            "isDeal": true
+          }
+        ],
+        "sortBy": "price"
+      },
+      "shortHaul": false
+    }
+  }
+}

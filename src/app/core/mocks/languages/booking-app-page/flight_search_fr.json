@@ -1,0 +1,125 @@
+{
+	"BOOKING_APP": {
+		"HEADERS" : ["RÉSERVER UN VOL", "ENREGISTREMENT", "GÉRER LA RÉSERVATION", "STATUT DU VOL"],
+		"BOOK_A_FLIGHT": {
+			"TITLE": "RÉSERVER UN VOL",
+			"TRIP_TYPES" : ["Aller-retour", "Aller simple", "Multi-villes"],
+			"FLY_SELECT": "Sélectionner",
+			"FLY_SELECT_FROM": "Départ",
+			"FLY_SELECT_TO": "Arrivée",
+			"FLY_ALL": "Tout",
+			"FLY_FROM": "De",
+			"FLY_TO": "À",
+			"FLY_SEARCH_AIRPORT": "Rechercher des aéroports",
+			"DATES": "Dates",
+			"CHOOSE_YOUR_DATE": "Choisissez votre",
+			"DEPARTURE_DATE": "Date de départ",
+			"RETURN_DATE": "Date de retour",
+			"MOBILE_CHOOSE_DATE": "Choisissez la date",
+			"MOBILE_DEPARTURE_DATE": "Départ",
+			"MOBILE_RETURN_DATE": "Arrivée",
+			"PAX_CABIN_CLASS": "Pax/classe cabine",
+			"PAX_CABIN_CLASS_SELECT": "Sélectionnez une classe",
+			"CABIN_ECONOMIC_CLASS" : "Economique",
+			"CABIN_BUSINESS_CLASS" : "Affaire",
+			"PAX_TYPE": {
+				"ADT": { "label": "Adultes", "subLabel": "+12 ans" },
+				"CHD": { "label": "Enfants", "subLabel": "De 2 a 12 ans" },
+				"INF": { "label": "Bébés", "subLabel": "Sous 2 ans" },
+				"NEW": { "label": "Nouveau", "subLabel": "Nouvelle acquisition" },
+				"YTH": { "label": "Jeune", "subLabel": "Conditions" },
+				"STU": { "label": "Étudiant", "subLabel": "Conditions" },
+				"YCD": { "label": "YCD?", "subLabel": "Conditions" }
+			},
+			"PAY_WITH_MILES": "Acheter un billet avec mes miles",
+			"PAYMENT_METHOD_TITLE": "Mode de paiement",
+			"PAYMENT_MOROCCAN_CREDIT_CARD": "Cartes de crédit marocaines",
+			"PAYMENT_INTERNATIONAL_CREDIT_CARD": "Cartes de crédit internationales",
+			"PAYMENT_CASH": "Paiement en espèces",
+			"PROMO_CODE": "J'ai un code promo",
+			"MOBILE_PROMO_CODE": "code promo",
+			"SEARCH": "Chercher",
+			"REMOVE": "Retirer",
+			"CONFIRM": "Confirmer",
+			"SHOW_LAST_SEARCHES": "Afficher vos dernières recherches",
+			"HIDE_LAST_SEARCHES": "Cachez vos dernières recherches",
+			"ERRORS": {
+				"ERROR_ORIGIN_REQUIRED":"Veuillez sélectionner l'origine.",
+				"ERROR_DESTINATION_REQUIRED": "Veuillez sélectionner la destination.",
+				"ERROR_DEPARTURE_RETURN_DATE_REQUIRED": "Veuillez sélectionner la date de départ et de retour.",
+				"ERROR_RETURN_DATE_REQUIRED": "Veuillez sélectionner la date de retour.",
+				"ERROR_DEPARTURE_DATE_REQUIRED": "Veuillez sélectionner la date de départ.",
+				"ERROR_DEPARTURE_PASSENGER_TYPE_REQUIRED": "Veuillez ajouter des types de passagers.",
+				"ERROR_DEPARTURE_PROMOCODE_INVALID": "Promocode invalide",
+				"ERROR_PAYMENT_METHOD_REQUIRED": "Veuillez sélectionner le mode de paiement."
+			}
+		},
+		"CHECK_IN" : {
+			"TITLE" : "ENREGISTREMENT",
+			"TAB_HEADERS" : ["Numéro de réservation", "Numéro de billet"],
+			"LAST_NAME": "Nom de famille",
+			"BOOKING_NUMBER": "Numéro de réservation",
+			"TICKET_NUMBER": "Numéro de billet",
+			"CHECK_IN_BTN": "Enregistrement",
+			"ERRORS": {
+				"ERROR_LASTNAME_REQUIRED":"Veuillez entrer le nom de famille.",
+				"ERROR_BOOKING_NUMBER_REQUIRED":"Veuillez entrer le numéro de réservation.",
+        "ERROR_TICKET_NUMBER_REQUIRED":"Veuillez entrer le numéro du billet.",
+        "ERROR_BOOKING_NUMBER_INVALID":"Format invalide.",
+        "ERROR_LASTNAME_INVALID":"Format invalide."
+			}
+		},
+		"MANAGE_BOOKING" : {
+			"TITLE" : "GÉRER LA RÉSERVATION",
+			"LAST_NAME": "Nom de famille",
+			"BOOKING_NUMBER": "Numéro de réservation",
+			"SEARCH_BTN": "Chercher",
+			"ERRORS": {
+				"ERROR_LASTNAME_REQUIRED":"Veuillez entrer le nom de famille.",
+        "ERROR_BOOKING_NUMBER_REQUIRED":"Veuillez plaît entrer le numéro de réservation.",
+        "ERROR_BOOKING_NUMBER_INVALID":"Format invalide.",
+        "ERROR_LASTNAME_INVALID":"Format invalide."
+			}
+		},
+		"FLIGHT_STATUS" : {
+			"TITLE" : "L'ÉTAT DU VOL",
+			"TAB_HEADERS" : ["Route", "Numéro de vol"],
+			"DEPARTURE": "Départ",
+			"ARRIVAL": "Arrivée",
+			"FLIGHT_NUMBER_PLACE_HOLDER": "XXXX (Numéro de vol)",
+			"FLIGHT_NUMBER": "Numéro de vol",
+			"CHECK_STATUS_BTN": "Vérifier l'état",
+			"ERRORS": {
+				"ERROR_DEPARTURE_REQUIRED":"S'il vous plaît sélectionnez départ.",
+				"ERROR_ARRIVAL_REQUIRED": "S'il vous plaît sélectionnez arrivée.",
+				"ERROR_FLIGHT_NUM_REQUIRED": "S'il vous plaît entrer le numéro de vol",
+				"ERROR_FLIGHT_NUM_INVALID": "Format invalide.",
+				"ERROR_NO_FLIGHT_ON_DATE": "Aucun vol disponible à cette date."
+			},
+			"DAYS": {
+				"YESTERDAY": "Hier",
+				"TODAY": "Aujourd'hui",
+				"TOMORROW": "Demain"
+
+			},
+			"STATUS": "Statut",
+			"STATUT": {
+				"ARRIVED": "Arrivée",
+				"ON_TIME": "À temps",
+				"DELAYED": "Différé",
+				"CANCELLED": "Annulé",
+				"IN_PROGRESS": "En Cours"
+			},
+			"ALL": "Tout",
+			"MODAL_HEADER": "L'accès non autorisé",
+			"MODAL_BODY": "La session a expiré"
+		},
+		"DAYS" : ["Dimanche","Lundi","Mardi","Mercredi","Jeudi","Vendredi","Samedi"],
+		"MONTHS" : ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"],
+		"MONTHS_ABBREVIATED" : ["Jan","Fév","Mar","Avr","Mai","Juin","Juil","Août","Sept","Oct","Nov","Déc"],
+		"GENERIC_MESSAGES": {
+			"NO_RECORDS_FOUND": "Aucun enregistrement trouvé.",
+			"API_ERROR": "Aucun enregistrement trouvé."
+		}
+	}
+}

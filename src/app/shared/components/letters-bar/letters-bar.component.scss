@@ -1,0 +1,43 @@
+@import './../../../../styles';
+
+.center-option{
+    text-align: center;
+    border-left: 1px solid $black-color;
+}
+
+
+.letter-choice, .all-choice{
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    font-size: 1em;
+}
+
+.active{
+    color:$black-color;
+    cursor: pointer;
+
+}
+.selected{
+    color:$red-color;
+    cursor: pointer;
+}
+.disabled{
+    cursor: default;
+    color:$gray-color;
+    p {
+        &:hover {
+            color:inherit;
+        }
+    }
+}
+p{
+
+    &:hover{
+        color: $red-color;
+        text-decoration: none;
+
+    }
+}
+
+

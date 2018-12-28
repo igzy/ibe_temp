@@ -1,0 +1,22 @@
+{
+    "data": [
+        {
+            "offerId": 1,
+            "matmidBenefits": [
+                "CBAG",
+                "CH_PENALTY",
+                "HBAG",
+                "MEAL"
+            ]
+        },
+        {
+            "offerId": 2,
+            "matmidBenefits": [
+                "CBAG",
+                "CH_PENALTY",
+                "HBAG",
+                "MEAL"
+            ]
+        }
+    ]
+}

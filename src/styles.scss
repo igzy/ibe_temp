@@ -1,0 +1,40 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'assets/scss/variables';
+/*@import 'assets/scss/fonts'; */// removed the block comment from last revision as it is disrupting the fonts when the app is being run independently.
+@import '~bootstrap/scss/bootstrap';
+
+
+// Bootstrap Overrides
+
+// .container {
+//   padding-left: 25px;
+//   padding-right: 25px;
+
+//   & .row:first-of-type {
+//     margin-left: -25px;
+//     margin-right: -25px;
+//   }
+// }
+
+// $screen-md: 992px !default;
+// $screen-md-min: ($screen-md + 1) !default;
+
+body {
+  font-family: $body-font-family;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  //text-align: justify;
+}
+
+.btn {
+//   padding: 0.393em 0.75em;
+}
+
+.btn-field {
+  background-color: transparent;
+  color: $white-color;
+  text-align: left;
+  padding: 0 20px;
+//   padding: 0 0 0.688em;
+//   border-bottom: 1px solid $white-color;
+}

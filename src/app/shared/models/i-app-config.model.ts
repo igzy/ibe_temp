@@ -1,0 +1,37 @@
+export interface IAppConfigModel {
+  API_ENDPOINT_BFM: string;
+  API_ENDPOINT_IBE_ADMIN: string;
+  LANGUAGE_MOCKS: string;
+  PAYMENT_MOCKS: string;
+  BOOKING_MOCKS: string;
+  AVAILABILITY_MOCK: boolean;
+  ORIGINS_MOCK: boolean;
+  DESTINATIONS_MOCK: boolean;
+  RETRIEVE_PNR_MOCKS: string;
+  PNR_MOCK: boolean;
+  SHOPPING_BASKET_MOCKS: string;
+  BASKET_MOCK: boolean;
+  SET_CONTACT_DATA_MOCKS: string;
+  CONTACT_MOCK: boolean;
+  CREATE_SESSION_BFM_MOCKS: string;
+  SESSION_BFM_MOCK: boolean;
+  CREATE_SESSION_BFMADMIN_MOCKS: string;
+  SESSION_BFMADMIN_MOCK: boolean;
+  SAVE_PASSENGER_MOCK: boolean;
+  GET_PAX_INFO: boolean;
+  GET_PREFIX: boolean;
+  TERMS_CONDITIONS_MOCK: boolean;
+  CREATE_MARKETS_MOCKS: string;
+  MARKETS_MOCK: boolean;
+  BOOKING_FARE_MOCK: boolean;
+  CREATE_LOCALES_MOCKS: string;
+  LOCALES_MOCK: boolean;
+  GET_FLIGHT_MOCK: boolean;
+  PRICES_CALENDAR_MOCK: boolean;
+  FLIGHT_STATUS_MOCK: boolean;
+  FLIGHT_INFO_MOCKS: string;
+  PAX_MOCK: boolean;
+  SESSION_EPRICING_MOCK: boolean;
+  DATES_CALENDAR_PRICE_MOCK: boolean;
+  DEPARTURE_CALENDAR_PRICE_MOCK: boolean;
+}

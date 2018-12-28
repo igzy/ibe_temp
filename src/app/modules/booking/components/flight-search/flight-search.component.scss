@@ -1,0 +1,410 @@
+@import './../../../../../styles';
+
+.flight-search {
+//   background-color: $white-color;
+
+	.multiButtons{
+		background: transparent;
+		border: none;
+		color: $white-color;
+        cursor: pointer;
+
+		&:disabled{
+			opacity: 0.5;
+		}
+	}
+
+  .nav-tabs .nav-link {
+      background-color: $light-gray-color;
+  }
+  .nav-tabs .nav-link.active {
+      background-color: $black-color;
+      color: $white-color;
+  }
+  .nav-tabs .nav-link.active:hover {
+      color: $white-color;
+  }
+  .nav-tabs .nav-link:hover {
+      color: $black-color;
+  }
+  .dropdown-toggle {
+      margin-left: 10px;
+  }
+  // Radio Buttons
+  input[type='radio'] {
+      display: none;
+      &+label {
+          background-color: $light-gray-color;
+      }
+      &:checked+label {
+          background-color: $black-color;
+      }
+  }
+  // Autocomplete
+  .ng-autocomplete-placeholder {
+      display: none;
+  }
+  .ng-autocomplete-dropdown {
+      position: relative;
+  }
+  .ng-dropdown.open {
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+      background: #FFF;
+      border: 1px solid #3297FD;
+  }
+  .dropdown-item.active,
+  .dropdown-item:active {
+      background-color: #3297FD;
+  }
+  .dropdown-item {
+      padding: 0 12px;
+      color: #495057;
+  }
+  .ng-autocomplete-input {
+      font-size: 1rem;
+      transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+      display: inline-block;
+      width: 100%;
+      padding: .375rem 1.75rem .375rem .75rem;
+      line-height: 1.5;
+      color: #495057;
+      vertical-align: middle;
+      background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center;
+      background-size: 8px 10px;
+      border: 1px solid #ced4da;
+      border-radius: .25rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      // @extend .btn;
+      // @extend .form-control;
+      // @extend .custom-select;
+  }
+
+  .search-button {
+    background-color: $white-color;
+    color: #B61432;
+    font-weight: 700;
+    font-size: 1.286em;
+  }
+}
+
+.error-message{
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 100%;
+  color: $white-color;
+}
+
+.remove-rows-button {
+  margin-top: 35px;
+}
+
+:host ::ng-deep {
+  .booking-header {
+    display: inline-block;
+    color:  $white-color;
+    margin-right: 3.286em;
+  }
+
+  .booking-header-rtl {
+    display: inline-block;
+    color:  $white-color;
+    margin-left: 3.286em;
+  }
+
+  .booking-header-active, .booking-header-rtl-active {
+    border-bottom: 2px solid $red-color;
+  }
+
+  .tab-content {
+    padding: 0;
+  }
+}
+
+.non-multi-from-wrapper{
+    app-autocomplete /deep/ .inbound-outbound{
+        position: absolute;
+        z-index: 1;
+        top: 36px;
+    }
+}
+
+.pl-rtl-0 {
+    padding-right: 0;
+}
+
+.pl-ltr-0 {
+    padding-left: 0;
+}
+
+.pr-ltr-0 {
+    padding-right: 0;
+}
+
+.pl-rtl-0 {
+    padding-left: 0;
+}
+
+.mr-ltr-5 {
+    margin-right: 2.571em;
+}
+
+.ml-rtl-5 {
+    margin-left: 2.571em;
+}
+
+.mr-ltr-4 {
+    margin-right: 1.714em;
+}
+
+.ml-rtl-4 {
+    margin-left: 1.714em;
+}
+
+.non-multi-to-wrapper{
+    position: static;
+    app-autocomplete /deep/ .inbound-outbound{
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        top: 36px;
+    }
+
+    app-autocomplete /deep/ .auto-complete-div{
+        top: -36px;
+        position: relative;
+    }
+}
+
+.r-date-picker-wrapper{
+    position: static;
+    app-datepicker /deep/ .datepicker-calendar{
+        position: absolute;
+        left: 0;
+        top: 36px;
+    }
+}
+
+.o-date-picker-wrapper, .m-date-picker-wrapper{
+    app-datepicker /deep/ .datepicker-calendar{
+        position: absolute;
+        top: 36px;
+    }
+
+    app-datepicker /deep/ .ddw-icon-div{
+        width: 94%;
+    }
+}
+
+.flight-search-form{
+    position: relative;
+}
+
+.pay-with-miles-wrapper{
+    color: $white-color !important;
+    .pay-miles-out{
+        cursor: pointer;
+        background-color: $red-color;
+        font-size: 0.929em;
+    }
+
+    .checkbox-container {
+        display: block;
+        position: relative;
+        padding-left: 2.500em;
+        margin-bottom: 0.857em;
+        cursor: pointer;
+        font-size: 0.929em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: $white-color !important;
+    }
+
+    .checkbox-container-rtl {
+        display: block;
+        position: relative;
+        padding-right: 2.500em;
+        margin-bottom: 0.857em;
+        cursor: pointer;
+        font-size: 0.929em;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+    /* Hide the browser's default checkbox */
+    .checkbox-container input, .checkbox-container-rtl input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 19px;
+        width: 19px;
+        border: 1px solid  $white-color;
+        background-color: transparent;
+    }
+
+    .checkmark-rtl {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 19px;
+        width: 19px;
+        border: 1px solid  $white-color;
+        background-color: transparent;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after, .checkmark-rtl:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .checkbox-container input:checked ~ .checkmark:after, .checkbox-container-rtl input:checked ~ .checkmark-rtl:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .checkbox-container .checkmark:after, .checkbox-container-rtl .checkmark-rtl:after {
+        left: 5px;
+        top: 0px;
+        width: 7px;
+        height: 15px;
+        border: solid $white-color;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+@include media-breakpoint-up(lg) {
+  .flight-search-form {
+    .flex-item:nth-of-type(1) { flex: 2 }
+    .flex-item:nth-of-type(2) { flex: 2 }
+    .flex-item:nth-of-type(3) { flex: 2.5 }
+    .flex-item:nth-of-type(4) { flex: 1.5 }
+    .flex-item:nth-of-type(5) { flex: 1 }
+  }
+  .flight-search-form-controls {
+    .flex-item:nth-of-type(1) { flex: 8 }
+    .flex-item:nth-of-type(2) { flex: 1 }
+  }
+}
+
+
+@media (max-width: map-get($container-max-widths, md)) {
+	.flight-search{
+		color: $black-color;
+		.flex-item {
+			margin:20px 0px;
+			padding: 0 30px;
+        }
+        
+        .pay-miles-out{
+            background-color: transparent;
+            color: $black-color;
+        }
+
+		.checkmark, .checkmark-rtl{
+			border:1px solid $black-color!important;
+        }
+        
+        .checkbox-container {
+            color: $black-color!important;
+            padding-left: 30px;
+        }
+
+        .checkbox-container-rtl {
+            padding-right: 30px;
+        }
+
+		.checkbox-container .checkmark:after{
+            left: 5px;
+            top: 0px;
+            width: 7px;
+            height: 15px;
+            border: solid $red-color;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(34deg);
+            -ms-transform: rotate(34deg);
+            transform: rotate(34deg);
+        }
+        
+        .checkbox-container-rtl .checkmark-rtl:after{
+            right: 5px;
+            top: 0px;
+            width: 7px;
+            height: 15px;
+            border: solid $red-color;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(34deg);
+            -ms-transform: rotate(34deg);
+            transform: rotate(34deg);
+		}
+		label{
+			color: $black-color;
+        }
+
+        app-promocode /deep/ .no-promo-wrapper p, app-promocode /deep/ .disable-promo p {
+			color: $red-color;
+            border-bottom: 1px solid  $red-color;
+            width: 75px;
+        }
+
+        app-promocode /deep/ .promo-input-wrapper input {
+			color: $red-color;
+            border: 1px solid  $black-color;
+            width: 80px;
+            height: 20px;
+        }
+
+		button.search-button {
+			color: $white-color;
+			background-color: $red-color;
+			width: 60%;
+			margin:0 auto;
+		}
+
+		.multiButtons{
+			color: $black-color;
+        }
+        
+        .pl-rtl-0 {
+            padding-right: 0.750em;
+        }
+        
+        .pl-ltr-0 {
+            padding-left: 0.750em;
+        }
+        
+        .pr-ltr-0 {
+            padding-right: 0.750em;
+        }
+        
+        .pl-rtl-0 {
+            padding-left: 0.750em;
+        }
+
+
+	}
+
+
+
+}

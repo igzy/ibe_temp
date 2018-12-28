@@ -1,0 +1,146 @@
+{
+    "status": "200",
+    "errors": [],
+    "timeService": null,
+    "timeBackend": null,
+    "data": {
+        "listPaxNum": [
+            {
+                "paxNum": 1,
+                "paxType": "ADT"
+            }
+        ],
+        "tripType": null,
+        "listOutbound": [
+            {
+                "idFlight": 1,
+                "idFlightAvail": 1,
+                "duration": 265,
+                "numberOfStops": 0,
+                "fareFamily": "WWFFBUS1",
+                "freeBaggageForPax": {},
+                "cabin": "B",
+                "listSegment": [
+                    {
+                        "idInfoSegment": 1,
+                        "departureAirport": "TLV",
+                        "arrivalAirport": "MAD",
+                        "departureDate": "2018-07-12T16:55:00",
+                        "arrivalDate": "2018-07-12T21:20:00",
+                        "carrier": "LY",
+                        "flightNumber": "397",
+                        "operationCarrier": "LY",
+                        "equipment": "738",
+                        "duration": 265,
+                        "stopTime": 0,
+                        "departureTerminal": null,
+                        "arrivalTerminal": null,
+                        "status": [],
+                        "baggageForPax": {},
+                        "rbd": "J",
+                        "fareBasis": "JIPEU",
+                        "tatto": "1"
+                    }
+                ],
+                "totalPrice": {
+                    "price": 627.31,
+                    "basePrice": 596.5,
+                    "tax": 30.81
+                },
+                "totalPoints": null,
+                "airportChange": false
+            }
+        ],
+        "inbound": {
+            "idFlight": 2,
+            "idFlightAvail": 1,
+            "duration": 345,
+            "numberOfStops": 0,
+            "fareFamily": "WWFFBUS1",
+            "freeBaggageForPax": {},
+            "cabin": "B",
+            "listSegment": [
+                {
+                    "idInfoSegment": 1,
+                    "departureAirport": "MAD",
+                    "arrivalAirport": "TLV",
+                    "departureDate": "2018-07-26T22:50:00",
+                    "arrivalDate": "2018-07-27T04:35:00",
+                    "carrier": "LY",
+                    "flightNumber": "398",
+                    "operationCarrier": "LY",
+                    "equipment": "739",
+                    "duration": 345,
+                    "stopTime": 0,
+                    "departureTerminal": null,
+                    "arrivalTerminal": null,
+                    "status": [],
+                    "baggageForPax": {},
+                    "rbd": "J",
+                    "fareBasis": "JIPEU",
+                    "tatto": "2"
+                }
+            ],
+            "totalPrice": {
+                "price": 630.5,
+                "basePrice": 596.5,
+                "tax": 34.0
+            },
+            "totalPoints": null,
+            "airportChange": false
+        },
+        "cFF": null,
+        "currency": "EUR",
+        "points": null,
+        "flightPrice": {
+            "totalPrice": {
+                "price": 1087.64,
+                "basePrice": 1032.0,
+                "tax": 55.64,
+                "taxes": null
+            },
+            "totalPoints": null,
+            "listPaxPrice": [
+                {
+                    "price": 1087.64,
+                    "basePrice": 1032.0,
+                    "tax": 55.64,
+                    "typePax": "ADT",
+                    "taxes": [
+                        {
+                            "amount": 21.44,
+                            "code": "JD",
+                            "type": "AE"
+                        },
+                        {
+                            "amount": 0.6,
+                            "code": "OG",
+                            "type": "CO"
+                        },
+                        {
+                            "amount": 3.5,
+                            "code": "QV",
+                            "type": "DP"
+                        },
+                        {
+                            "amount": 23.18,
+                            "code": "IL",
+                            "type": "EB"
+                        },
+                        {
+                            "amount": 6.92,
+                            "code": "AP",
+                            "type": "SE"
+                        }
+                    ]
+                }
+            ],
+            "listPaxPoints": null
+        },
+        "endorsed": [],
+        "fareCalculation": [],
+        "lastTicketDay": null,
+        "timeToThink": null,
+        "mandatoryApis": false
+    }
+}

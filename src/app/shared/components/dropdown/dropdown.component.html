@@ -1,0 +1,31 @@
+<!-- <div class="input-div pl-0 pr-0" (click)="expandContent()" [ngStyle]="{'cursor': disableClick ? 'no-drop':'pointer'}">
+	<div class="container-fluid pl-0 pr-0">
+		<div class="row ">
+			<div class="col-lg-9 col-9 col-sm-9 col-md-9 text-light">
+				<i class="text-light mr-2" [ngClass]="leftIcon"></i>
+				<span class="dropdown-label">{{ dropdownLabel }} </span>
+			</div>
+			<div class="col-lg-3 col-3 col-sm-3 col-md-3 rightIcon">
+				<span class="pr-1">
+					<i class="text-light" [ngClass]="rightIcon"></i>
+				</span>
+			</div>
+		</div>
+	</div>
+</div> -->
+
+<div id="rDropdownInputDiv" class="input-div pl-0 pr-0" (click)="expandContent()"  [ngStyle]="{'cursor': disableClick ? 'no-drop':'pointer'}">
+	<div class="container-fluid pl-0 pr-0">
+		<div class="row mx-0">
+			<div class="col-lg-12 col-12 d-inline-flex px-0">
+				<i id="rDropdownleftIcon" class="col-1 align-self-center px-0" [ngClass]="leftIcon" *ngIf="leftIcon"></i>
+				<span [ngClass]="direction === 'rtl' ? 'dropdown-label-rtl' :  'dropdown-label'" id="rDropdownLabel" class="col-10">{{ dropdownLabel }}</span>
+				<i id="rDropdownRightIcon" class="col-1 align-self-center text-right px-0" [ngClass]="rightIcon" *ngIf="rightIcon"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div [ngClass]="dropdownBodyClass">
+	<ng-content></ng-content>
+</div>

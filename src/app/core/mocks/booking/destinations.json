@@ -1,0 +1,40 @@
+{
+"data":  {"destinations": [
+       {
+        "name": "airport-nce-gabi",
+        "code": "NCE",
+        "label": "Cote d'Azur-gabi",
+        "location": {
+          "cityName": "NCE",
+          "city": "Nice",
+          "country": "France",
+          "countryName": "FR"
+        }
+      },
+       {
+        "name": "airport-sfo",
+        "code": "SFO",
+        "label": "International Airport",
+        "location": {
+          "cityName": "SFO",
+          "city": "San Francisco",
+          "stateName": "CA",
+          "state": "California",
+          "country": "USA",
+          "countryName": "US"
+        }
+      },
+     {
+        "name": "airport-tlv",
+        "code": "TLV",
+        "label": "Ben Gurion Intl",
+        "location": {
+          "cityName": "TLV",
+          "city": "Tel Aviv-Yafo",
+          "country": "Israel",
+          "countryName": "IL"
+        }
+      }
+    ]
+  }
+}

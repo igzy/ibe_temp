@@ -1,0 +1,75 @@
+
+<app-mobile-header [title]="translations?.BOOKING_APP?.CHECK_IN?.TITLE" [rightIcon]="'icon-remove1'"></app-mobile-header>
+
+<div class="row pb-md-5 checkin-header">
+  <div class="col-12">
+	  <app-tabs [tabHeaders]="tabHeaders" [tabHeadClass]="'booking-header'" (selectionChange)="changeTab($event)"></app-tabs>
+  </div>
+</div>
+
+<div *ngIf="activeTab === tabHeaders[0]" class="row mx-0 px-4 px-md-0 pb-2 pb-md-0">
+
+		<!-- <div > -->
+		<form [formGroup]="checkinBookingOnlineForm" class="input-container row col-md-12  ">
+			<div class="col-md-5 col-12 pl-md-0 pb-3 pb-md-0">
+				<div class="last-name-wrapper">
+					<app-input-text [inputPlaceHolder]="translations?.BOOKING_APP?.CHECK_IN?.LAST_NAME"
+					[leftIcon]="'icon-user'"
+					formControlName="lastName"
+					[control]="checkinBookingOnlineForm.controls['lastName']"
+					(keypress)="validateLastName($event)">
+					</app-input-text>
+					<div class="error-message"  *ngIf="checkinBookingOnlineForm.get('lastName').invalid && checkinBookingOnlineForm.get('lastName').touched">
+              {{ ( checkinBookingOnlineForm.controls['lastName'].errors?.required ?  translations?.BOOKING_APP?.CHECK_IN?.ERRORS?.ERROR_LASTNAME_REQUIRED  :  translations?.BOOKING_APP?.CHECK_IN?.ERRORS?.ERROR_LASTNAME_INVALID )  }}
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-5 col-12 pl-md-0 pb-3 pb-md-0">
+				<div class="booking-num-wrapper">
+					<app-input-text [inputPlaceHolder]="translations?.BOOKING_APP?.CHECK_IN?.BOOKING_NUMBER"
+					[leftIcon]="'icon-card'"
+					formControlName="bookingNumber"
+					[control]="checkinBookingOnlineForm.controls['bookingNumber']"
+          (keypress)="alphaNumericOnly($event)"
+          [upperCase]="true"
+          [size]="6">
+					</app-input-text>
+					<div class="error-message"  *ngIf="checkinBookingOnlineForm.get('bookingNumber').invalid && checkinBookingOnlineForm.get('bookingNumber').touched">
+              {{ ( checkinBookingOnlineForm.controls['bookingNumber'].errors?.required ?  translations?.BOOKING_APP?.CHECK_IN?.ERRORS?.ERROR_BOOKING_NUMBER_REQUIRED  :  translations?.BOOKING_APP?.CHECK_IN?.ERRORS?.ERROR_BOOKING_NUMBER_INVALID )  }}
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2 col-12 pr-md-0 pb-3 pb-md-0">
+				<div class="col-12">
+				<button class="btn btn-block checkin-button" type="submit" (click)="onCheckin()">{{translations?.BOOKING_APP?.CHECK_IN?.CHECK_IN_BTN}}</button>
+				</div>
+			</div>
+		</form>
+		<!-- </div> -->
+
+</div>
+
+<div *ngIf="activeTab === tabHeaders[1]" class="row mx-0 px-4 px-md-0 pb-2 pb-md-0">
+    <form [formGroup]="checkinTicketForm" class=" input-container row col-md-12 ">
+      <div class="col-md-10 col-12 pl-md-0 pb-3 pb-md-0">
+        <div class="col-12 ticket-wrapper">
+            <app-input-text [inputPlaceHolder]="translations?.BOOKING_APP?.CHECK_IN?.TICKET_NUMBER"
+              [leftIcon]="''"
+							formControlName="ticketNumber"
+					    [control]="checkinBookingOnlineForm.controls['ticketNumber']"
+              (keypress)="alphaNumericOnly($event)">
+						</app-input-text>
+						<div class="error-message"  *ngIf="checkinTicketForm.get('ticketNumber').invalid && checkinTicketForm.get('ticketNumber').touched">
+								{{translations?.BOOKING_APP?.CHECK_IN?.ERRORS?.ERROR_TICKET_NUMBER_REQUIRED}}
+						</div>
+        </div>
+      </div>
+      <div class="col-md-2 col-12 pr-md-0 pb-3 pb-md-0">
+        <div class="col-12">
+          <button class="btn btn-block checkin-button" (click)="onCheckin()" >{{translations?.BOOKING_APP?.CHECK_IN?.CHECK_IN_BTN}}</button>
+        </div>
+      </div>
+    </form>
+</div>
+

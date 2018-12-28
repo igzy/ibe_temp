@@ -1,0 +1,17 @@
+
+<div class="radio-button-wrapper">
+  <app-radio-button (selectedChoiceEvent)="onSelectedChoiceEvent($event)" [choices]="choices"></app-radio-button>
+</div>
+<div class="modal-wrapper">
+  <app-dropdown [dropdownLabel]="mobPaymentMethodDescription ? '': translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAYMENT_METHOD_TITLE" [leftIcon]="'icon-stripe-card'" [rightIcon]="'icon-arrow-down'" (dropdownClicked)="onFocus()">
+  </app-dropdown>
+  <div class="dropdown-wrapper container-fluid pt-4 pb-4 bg-light" *ngIf="isDropdownVisible">
+      <div class="mobile-header-wrapper">
+          <app-mobile-header [leftIcon]="'icon-stripe-card'" [title]="translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PAYMENT_METHOD_TITLE" [rightIcon]="'icon-remove1'" (closeEvent)="onFocus(1)" ></app-mobile-header>
+      </div>
+        <app-radio-button (selectedChoiceEvent)="onSelectedChoiceEvent($event)" [choices]="choices"></app-radio-button>
+    </div>
+  <div *ngIf="mobPaymentMethodDescription">
+      <app-display-selected [selectedObject]="mobPaymentMethodDescription" [displayFor]="'paymentMethod'"></app-display-selected>
+  </div>
+</div>

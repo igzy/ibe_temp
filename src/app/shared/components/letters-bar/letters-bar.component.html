@@ -1,0 +1,19 @@
+<div>
+  <ul>
+     <li class="all-choice {{selectedStack.length != 1 ? 'selected' : 'active'}}" (mousedown)="updateSelectedLetters('All')">
+        <p id="letterfilterId" class="mb-0 filter-content">{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.FLY_ALL}}</p>
+       <!-- <span>|</span>  -->
+     </li>
+     <li class="letter-choice {{(checkIfLetterIsStacked(option) && selectedStack.length == 1)? 'selected' : checkIfLetterIsAvailable(option) ? 'active': 'disabled' }}"
+         (mousedown)="updateSelectedLetters((checkIfLetterIsAvailable(option) ? option : null))"
+         *ngFor="let option of options; let i = index">
+       <!-- <a [disabled]="checkIfLetterIsAvailable(option) ? 'disabled' : 'true'">{{option}}</a> -->
+       <div class="center-option">
+          <p id="letterfilterId" class="mb-0 filter-content">{{option}}</p>
+       </div>
+       <!-- <span *ngIf="(options.length -1) != i "> | </span> -->
+     </li>
+  </ul>
+</div>
+
+

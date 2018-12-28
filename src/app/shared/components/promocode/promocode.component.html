@@ -1,0 +1,19 @@
+<div class="no-promo-wrapper" *ngIf="!(displayPromoInput || isValidPromoCode) " (click)="displayPromoField()">
+    <p class="normal-label">
+        {{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.PROMO_CODE}}
+    </p> 
+    <p class="mobile-label">
+        {{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.MOBILE_PROMO_CODE}}
+    </p> 
+</div>
+<div class="promo-input-wrapper" *ngIf="displayPromoInput" >
+    <form [formGroup]="promocodeForm">
+      <input (blur)="validatePromocode()" placeholder="{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.MOBILE_PROMO_CODE}}" formControlName="promocode">
+      <div class="text-danger" *ngIf="(!isValidPromoCode && minLengthReached && formValidityFlag && apiRespondedFlag)">
+          <small>{{translations?.BOOKING_APP?.BOOK_A_FLIGHT?.ERRORS?.ERROR_DEPARTURE_PROMOCODE_INVALID}}</small>
+      </div>
+    </form>
+</div>
+<div class="valid-promo-wrapper px-1" *ngIf="isValidPromoCode && !displayPromoInput" >
+    <p class="mb-0">{{promocodeForm.controls.promocode.value}}</p><i (click)="clearPromoField()" [ngClass]="direction === 'rtl' ? 'pr-3' :  'pl-3'" class="icon-error-outline py-1"></i> 
+</div>
